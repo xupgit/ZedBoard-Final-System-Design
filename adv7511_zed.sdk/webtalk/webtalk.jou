@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Webtalk v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 17:18:21 MST 2014
+# 
+# Start of session at: Fri Jun 26 21:31:48 2015
+# Process ID: 1324
+# Log file: C:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.sdk/webtalk/webtalk.log
+# Journal file: C:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

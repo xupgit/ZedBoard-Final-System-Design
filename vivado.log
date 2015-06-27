@@ -1,0 +1,40 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:33:10 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Mon Jun 15 14:26:16 2015
+# Process ID: 12920
+# Log file: C:/Users/Evgheni/Desktop/arbeit_hls/hdl-hdl_2015_r1/projects/adv7511/zed/vivado.log
+# Journal file: C:/Users/Evgheni/Desktop/arbeit_hls/hdl-hdl_2015_r1/projects/adv7511/zed\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:\Users\Evgheni\Desktop\arbeit_hls\hdl-hdl_2015_r1\projects\adv7511\zed\adv7511_zed.xpr}
+WARNING: [filemgmt 20-922] The BXML file is of a newer version (0.31) then the current supported version (0.29).
+Data could be potentially be lost
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 20-922] The BXML file is of a newer version (0.31) then the current supported version (0.29).
+Data could be potentially be lost
+WARNING: [filemgmt 20-922] The BXML file is of a newer version (0.31) then the current supported version (0.29).
+Data could be potentially be lost
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name IPRepoPath
+CRITICAL WARNING: [Project 1-548] The board_part definition was not found for 'em.avnet.com:zed:part0:1.1'. The paths from the board_part_repo_paths project property were checked: ''. The project's board_part property was not set, but the project's part property was set to 'xc7z020clg484-1'. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command.
+WARNING: [Project 1-231] Project 'adv7511_zed.xpr' was created with a future version and may or may not perform reliably with this version of Vivado. It has been opened in read-only mode for the protection of unrecognized data. Use 'File | Save Project As...' if you wish to alter a copy of the project.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2014.2/data/ip'.
+WARNING: [IP_Flow 19-3549] Detected incompatibility between IP system_axi_iic_main_0 and its definition xilinx.com:ip:axi_iic:2.0
+WARNING: [IP_Flow 19-3549] Detected incompatibility between IP system_sys_concat_intc_0 and its definition xilinx.com:ip:xlconcat:2.1
+WARNING: [IP_Flow 19-3549] Detected incompatibility between IP system_sys_rstgen_0 and its definition xilinx.com:ip:proc_sys_reset:5.0
+WARNING: [IP_Flow 19-3549] Detected incompatibility between IP system_axi_hdmi_dma_0 and its definition xilinx.com:ip:axi_vdma:6.2
+WARNING: [IP_Flow 19-3549] Detected incompatibility between IP system_sys_audio_clkgen_0 and its definition xilinx.com:ip:clk_wiz:5.1
+WARNING: [IP_Flow 19-3549] Detected incompatibility between IP system_axi_iic_fmc_0 and its definition xilinx.com:ip:axi_iic:2.0
+WARNING: [IP_Flow 19-3549] Detected incompatibility between IP system_axi_cpu_interconnect_0 and its definition xilinx.com:ip:axi_interconnect:2.1
+WARNING: [IP_Flow 19-3549] Detected incompatibility between IP system_xbar_0 and its definition xilinx.com:ip:axi_crossbar:2.1
+WARNING: [IP_Flow 19-3549] Detected incompatibility between IP system_axi_hp0_interconnect_0 and its definition xilinx.com:ip:axi_interconnect:2.1
+WARNING: [IP_Flow 19-3549] Detected incompatibility between IP system_auto_pc_0 and its definition xilinx.com:ip:axi_protocol_converter:2.1
+WARNING: [IP_Flow 19-3549] Detected incompatibility between IP system_auto_pc_1 and its definition xilinx.com:ip:axi_protocol_converter:2.1
+WARNING: [BD 41-1303] One or more IPs have been locked in the design 'system.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 859.664 ; gain = 78.109
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 15 14:27:22 2015...

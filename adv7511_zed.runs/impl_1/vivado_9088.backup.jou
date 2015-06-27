@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.4.1 (64-bit)
+# SW Build 1149489 on Thu Feb 19 16:23:09 MST 2015
+# IP Build 1147552 on Wed Feb 18 14:25:16 MST 2015
+# Start of session at: Mon Jun 22 16:44:17 2015
+# Process ID: 3664
+# Log file: C:/Users/Evgheni/Desktop/arbeit_hls/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.runs/impl_1/system_top.vdi
+# Journal file: C:/Users/Evgheni/Desktop/arbeit_hls/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source system_top.tcl -notrace

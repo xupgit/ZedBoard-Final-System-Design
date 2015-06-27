@@ -1,0 +1,163 @@
+#-----------------------------------------------------------
+# Vivado v2014.4.1 (64-bit)
+# SW Build 1149489 on Thu Feb 19 16:23:09 MST 2015
+# IP Build 1147552 on Wed Feb 18 14:25:16 MST 2015
+# Start of session at: Fri Jun 19 11:50:22 2015
+# Process ID: 4048
+# Log file: C:/Users/Evgheni/Desktop/arbeit_hls/hdl-hdl_2015_r1/projects/adv7511/zed/adv7511_zed.runs/impl_1/system_top.vdi
+# Journal file: C:/Users/Evgheni/Desktop/arbeit_hls/hdl-hdl_2015_r1/projects/adv7511/zed/adv7511_zed.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source system_top.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 790 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2014.4.1
+Loading clock regions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z020/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z020/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z020/clg484/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.4/data\./parts/xilinx/zynq/IOStandards.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+WARNING: [Constraints 18-1079] Register i_system_wrapper/system_i/axi_hp0_interconnect/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and i_system_wrapper/system_i/axi_hp0_interconnect/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register i_system_wrapper/system_i/axi_hp0_interconnect/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and i_system_wrapper/system_i/axi_hp0_interconnect/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register i_system_wrapper/system_i/axi_interconnect_img_process/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and i_system_wrapper/system_i/axi_interconnect_img_process/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register i_system_wrapper/system_i/axi_interconnect_img_process/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and i_system_wrapper/system_i/axi_interconnect_img_process/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register i_system_wrapper/system_i/axi_interconnect_img_process/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and i_system_wrapper/system_i/axi_interconnect_img_process/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register i_system_wrapper/system_i/axi_interconnect_img_process/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and i_system_wrapper/system_i/axi_interconnect_img_process/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register i_system_wrapper/system_i/axi_interconnect_img_process/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and i_system_wrapper/system_i/axi_interconnect_img_process/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register i_system_wrapper/system_i/axi_interconnect_img_process/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and i_system_wrapper/system_i/axi_interconnect_img_process/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+Parsing XDC File [c:/Users/Evgheni/Desktop/arbeit_hls/hdl-hdl_2015_r1/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_sys_ps7_0/system_sys_ps7_0.xdc] for cell 'i_system_wrapper/system_i/sys_ps7/inst'
+Finished Parsing XDC File [c:/Users/Evgheni/Desktop/arbeit_hls/hdl-hdl_2015_r1/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_sys_ps7_0/system_sys_ps7_0.xdc] for cell 'i_system_wrapper/system_i/sys_ps7/inst'
+Parsing XDC File [c:/Users/Evgheni/Desktop/arbeit_hls/hdl-hdl_2015_r1/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_iic_main_0/system_axi_iic_main_0_board.xdc] for cell 'i_system_wrapper/system_i/axi_iic_main'
+Finished Parsing XDC File [c:/Users/Evgheni/Desktop/arbeit_hls/hdl-hdl_2015_r1/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_iic_main_0/system_axi_iic_main_0_board.xdc] for cell 'i_system_wrapper/system_i/axi_iic_main'
+Parsing XDC File [c:/Users/Evgheni/Desktop/arbeit_hls/hdl-hdl_2015_r1/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_sys_rstgen_0/system_sys_rstgen_0_board.xdc] for cell 'i_system_wrapper/system_i/sys_rstgen'
+Finished Parsing XDC File [c:/Users/Evgheni/Desktop/arbeit_hls/hdl-hdl_2015_r1/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_sys_rstgen_0/system_sys_rstgen_0_board.xdc] for cell 'i_system_wrapper/system_i/sys_rstgen'
+Parsing XDC File [c:/Users/Evgheni/Desktop/arbeit_hls/hdl-hdl_2015_r1/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_sys_rstgen_0/system_sys_rstgen_0.xdc] for cell 'i_system_wrapper/system_i/sys_rstgen'
+Finished Parsing XDC File [c:/Users/Evgheni/Desktop/arbeit_hls/hdl-hdl_2015_r1/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_sys_rstgen_0/system_sys_rstgen_0.xdc] for cell 'i_system_wrapper/system_i/sys_rstgen'
+Parsing XDC File [c:/Users/Evgheni/Desktop/arbeit_hls/hdl-hdl_2015_r1/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_dma/U0'
+Finished Parsing XDC File [c:/Users/Evgheni/Desktop/arbeit_hls/hdl-hdl_2015_r1/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_dma/U0'
+Parsing XDC File [c:/Users/Evgheni/Desktop/arbeit_hls/hdl-hdl_2015_r1/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_sys_audio_clkgen_0/system_sys_audio_clkgen_0_board.xdc] for cell 'i_system_wrapper/system_i/sys_audio_clkgen/inst'
+Finished Parsing XDC File [c:/Users/Evgheni/Desktop/arbeit_hls/hdl-hdl_2015_r1/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_sys_audio_clkgen_0/system_sys_audio_clkgen_0_board.xdc] for cell 'i_system_wrapper/system_i/sys_audio_clkgen/inst'
+Parsing XDC File [c:/Users/Evgheni/Desktop/arbeit_hls/hdl-hdl_2015_r1/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_sys_audio_clkgen_0/system_sys_audio_clkgen_0.xdc] for cell 'i_system_wrapper/system_i/sys_audio_clkgen/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/Evgheni/Desktop/arbeit_hls/hdl-hdl_2015_r1/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_sys_audio_clkgen_0/system_sys_audio_clkgen_0.xdc:56]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/Evgheni/Desktop/arbeit_hls/hdl-hdl_2015_r1/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_sys_audio_clkgen_0/system_sys_audio_clkgen_0.xdc:56]
+get_clocks: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1028.746 ; gain = 476.082
+Finished Parsing XDC File [c:/Users/Evgheni/Desktop/arbeit_hls/hdl-hdl_2015_r1/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_sys_audio_clkgen_0/system_sys_audio_clkgen_0.xdc] for cell 'i_system_wrapper/system_i/sys_audio_clkgen/inst'
+Parsing XDC File [c:/Users/Evgheni/Desktop/arbeit_hls/hdl-hdl_2015_r1/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_iic_fmc_0/system_axi_iic_fmc_0_board.xdc] for cell 'i_system_wrapper/system_i/axi_iic_fmc'
+Finished Parsing XDC File [c:/Users/Evgheni/Desktop/arbeit_hls/hdl-hdl_2015_r1/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_iic_fmc_0/system_axi_iic_fmc_0_board.xdc] for cell 'i_system_wrapper/system_i/axi_iic_fmc'
+Parsing XDC File [c:/Users/Evgheni/Desktop/arbeit_hls/hdl-hdl_2015_r1/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_vdma_0_0_1/system_axi_vdma_0_0.xdc] for cell 'i_system_wrapper/system_i/axi_vdma_img_process/U0'
+Finished Parsing XDC File [c:/Users/Evgheni/Desktop/arbeit_hls/hdl-hdl_2015_r1/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_vdma_0_0_1/system_axi_vdma_0_0.xdc] for cell 'i_system_wrapper/system_i/axi_vdma_img_process/U0'
+Parsing XDC File [C:/Users/Evgheni/Desktop/arbeit_hls/hdl-hdl_2015_r1/projects/common/zed/zed_system_constr.xdc]
+Finished Parsing XDC File [C:/Users/Evgheni/Desktop/arbeit_hls/hdl-hdl_2015_r1/projects/common/zed/zed_system_constr.xdc]
+Parsing XDC File [c:/Users/Evgheni/Desktop/arbeit_hls/hdl-hdl_2015_r1/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/analog.com/axi_clkgen_v1_0/eb15edc8/axi_clkgen_constr.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_clkgen'
+Finished Parsing XDC File [c:/Users/Evgheni/Desktop/arbeit_hls/hdl-hdl_2015_r1/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/analog.com/axi_clkgen_v1_0/eb15edc8/axi_clkgen_constr.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_clkgen'
+Parsing XDC File [c:/Users/Evgheni/Desktop/arbeit_hls/hdl-hdl_2015_r1/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/analog.com/axi_hdmi_tx_v1_0/8027155a/axi_hdmi_tx_constr.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_core'
+Finished Parsing XDC File [c:/Users/Evgheni/Desktop/arbeit_hls/hdl-hdl_2015_r1/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/analog.com/axi_hdmi_tx_v1_0/8027155a/axi_hdmi_tx_constr.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_core'
+Parsing XDC File [c:/Users/Evgheni/Desktop/arbeit_hls/hdl-hdl_2015_r1/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_clocks.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_dma/U0'
+Finished Parsing XDC File [c:/Users/Evgheni/Desktop/arbeit_hls/hdl-hdl_2015_r1/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_clocks.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_dma/U0'
+Parsing XDC File [c:/Users/Evgheni/Desktop/arbeit_hls/hdl-hdl_2015_r1/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/analog.com/axi_spdif_tx_v1_0/dce0d057/axi_spdif_tx_constr.xdc] for cell 'i_system_wrapper/system_i/axi_spdif_tx_core'
+Finished Parsing XDC File [c:/Users/Evgheni/Desktop/arbeit_hls/hdl-hdl_2015_r1/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/analog.com/axi_spdif_tx_v1_0/dce0d057/axi_spdif_tx_constr.xdc] for cell 'i_system_wrapper/system_i/axi_spdif_tx_core'
+Parsing XDC File [c:/Users/Evgheni/Desktop/arbeit_hls/hdl-hdl_2015_r1/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/analog.com/axi_i2s_adi_v1_0/4c7b9390/axi_i2s_adi_constr.xdc] for cell 'i_system_wrapper/system_i/axi_i2s_adi'
+Finished Parsing XDC File [c:/Users/Evgheni/Desktop/arbeit_hls/hdl-hdl_2015_r1/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/analog.com/axi_i2s_adi_v1_0/4c7b9390/axi_i2s_adi_constr.xdc] for cell 'i_system_wrapper/system_i/axi_i2s_adi'
+Parsing XDC File [c:/Users/Evgheni/Desktop/arbeit_hls/hdl-hdl_2015_r1/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_vdma_0_0_1/system_axi_vdma_0_0_clocks.xdc] for cell 'i_system_wrapper/system_i/axi_vdma_img_process/U0'
+Finished Parsing XDC File [c:/Users/Evgheni/Desktop/arbeit_hls/hdl-hdl_2015_r1/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_vdma_0_0_1/system_axi_vdma_0_0_clocks.xdc] for cell 'i_system_wrapper/system_i/axi_vdma_img_process/U0'
+Parsing XDC File [c:/Users/Evgheni/Desktop/arbeit_hls/hdl-hdl_2015_r1/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_auto_us_0/system_auto_us_0_clocks.xdc] for cell 'i_system_wrapper/system_i/axi_interconnect_img_process/s01_couplers/auto_us/inst'
+Finished Parsing XDC File [c:/Users/Evgheni/Desktop/arbeit_hls/hdl-hdl_2015_r1/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_auto_us_0/system_auto_us_0_clocks.xdc] for cell 'i_system_wrapper/system_i/axi_interconnect_img_process/s01_couplers/auto_us/inst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 60 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 38 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 20 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 2 instances
+
+link_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:29 . Memory (MB): peak = 1028.832 ; gain = 835.668
+Command: opt_design -directive Explore
+INFO: [Vivado_Tcl 4-136] Directive used for opt_design is: Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-1223] The version limit for your license is '2015.02' and will expire in -111 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.310 . Memory (MB): peak = 1028.832 ; gain = 0.000
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 3 inverter(s) to 3 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1fae445d2
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1028.832 ; gain = 0.000
+
+Phase 2 Constant Propagation
+INFO: [Opt 31-138] Pushed 8 inverter(s) to 9 load pin(s).
+INFO: [Opt 31-10] Eliminated 522 cells.
+Phase 2 Constant Propagation | Checksum: 16a5e4423
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1028.832 ; gain = 0.000
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 3026 unconnected nets.
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-11] Eliminated 618 unconnected cells.
+Phase 3 Sweep | Checksum: 1ef3b9946
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1028.832 ; gain = 0.000
+
+Phase 4 Constant Propagation
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+INFO: [Opt 31-10] Eliminated 0 cells.
+Phase 4 Constant Propagation | Checksum: 196260938
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1028.832 ; gain = 0.000
+
+Phase 5 Sweep
+INFO: [Opt 31-12] Eliminated 0 unconnected nets.
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-11] Eliminated 0 unconnected cells.
+Phase 5 Sweep | Checksum: 13b49d4c7
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1028.832 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 13b49d4c7
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 1028.832 ; gain = 0.000
+Implement Debug Cores | Checksum: 2401bcd81
+Logic Optimization | Checksum: 2401bcd81
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 3.13 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 8 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 3 newly gated: 1 Total Ports: 16
+Ending PowerOpt Patch Enables Task | Checksum: 20c7825b7
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 1095.539 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 20c7825b7
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:04 . Memory (MB): peak = 1095.539 ; gain = 66.707
+INFO: [Common 17-83] Releasing license: Implementation
+36 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1095.539 ; gain = 66.707
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.095 . Memory (MB): peak = 1095.539 ; gain = 0.000
+INFO: [Drc 23-27] Running DRC with 2 threads

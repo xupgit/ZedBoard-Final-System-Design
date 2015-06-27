@@ -1,0 +1,615 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (win64) Build 1071353 Tue Nov 18 18:29:27 MST 2014
+| Date         : Fri Jun 26 20:11:12 2015
+| Host         : ESIT044 running 64-bit Service Pack 1  (build 7601)
+| Command      : report_drc
+------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+           Max violations: <unlimited>
+         Violations found: 116
+
+2. REPORT DETAILS
+-----------------
+CFGBVS-1#1 Warning
+Missing CFGBVS and CONFIG_VOLTAGE Design Properties  
+Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+DPIP-1#1 Warning
+Input pipelining  
+DSP i_system_wrapper/system_i/toGray_1/inst/toGray_U/toGray_CvtColor_U0/r_V_1_fu_227_p2 input A C is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP i_system_wrapper/system_i/toGray_1/inst/toGray_U/toGray_CvtColor_U0/r_V_4_i_reg_332_reg input A B is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP i_system_wrapper/system_i/toGray_1/inst/toGray_U/toGray_CvtColor_U0/tmp_i_cast_reg_337_reg input A is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#4 Warning
+Input pipelining  
+DSP i_system_wrapper/system_i/toGray_1/inst/toGray_U/toGray_Equalize_U0/toGray_fmul_32ns_32ns_32_4_max_dsp_U20/toGray_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP input A B is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#5 Warning
+Input pipelining  
+DSP i_system_wrapper/system_i/toGray_1/inst/toGray_U/toGray_Equalize_U0/toGray_fmul_32ns_32ns_32_4_max_dsp_U20/toGray_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/DSP input B is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#6 Warning
+Input pipelining  
+DSP i_system_wrapper/system_i/toGray_1/inst/toGray_U/toGray_Equalize_U0/toGray_fmul_32ns_32ns_32_4_max_dsp_U20/toGray_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/DSP input A C is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#7 Warning
+Input pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_CvtColor_U0/r_V_1_fu_227_p2 input A C is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#8 Warning
+Input pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_CvtColor_U0/r_V_4_i_reg_332_reg input A B is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#9 Warning
+Input pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_CvtColor_U0/tmp_i_cast_reg_337_reg input A is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#10 Warning
+Input pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_GaussianBlur_U0/grp_toThreshold_Filter2D_fu_37/p_Val2_11_2_2_reg_3304_reg input B is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#11 Warning
+Input pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_GaussianBlur_U0/grp_toThreshold_Filter2D_fu_37/p_Val2_11_3_1_fu_1942_p2 input A is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#12 Warning
+Input pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_GaussianBlur_U0/grp_toThreshold_Filter2D_fu_37/p_Val2_11_3_2_fu_1952_p2 input A is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#13 Warning
+Input pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_GaussianBlur_U0/grp_toThreshold_Filter2D_fu_37/p_Val2_14_1_2_cast_reg_3294_reg input A is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#14 Warning
+Input pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_GaussianBlur_U0/grp_toThreshold_Filter2D_fu_37/tmp20_cast_reg_3324_reg input A is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#15 Warning
+Input pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_GaussianBlur_U0/grp_toThreshold_Filter2D_fu_37/tmp22_reg_3239_reg input B C is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#16 Warning
+Input pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_GaussianBlur_U0/grp_toThreshold_Filter2D_fu_37/tmp3_reg_3274_reg input B C is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#17 Warning
+Input pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_GaussianBlur_U0/grp_toThreshold_Filter2D_fu_37/tmp4_reg_3314_reg input B C is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#18 Warning
+Input pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_GaussianBlur_U0/grp_toThreshold_Filter2D_fu_37/tmp5_cast_reg_3319_reg input B C is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#19 Warning
+Input pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dadd_64ns_64ns_64_5_full_dsp_U84/toThreshold_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_ADD.DSP48E1_ADD/DSP input A B C is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#20 Warning
+Input pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dadd_64ns_64ns_64_5_full_dsp_U84/toThreshold_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_GEN.DSP48E1_DEL/DSP input A B is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#21 Warning
+Input pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dadd_64ns_64ns_64_5_full_dsp_U84/toThreshold_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP input B C is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#22 Warning
+Input pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dmul_64ns_64ns_64_6_max_dsp_U86/toThreshold_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP0/DSP input A B is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#23 Warning
+Input pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dmul_64ns_64ns_64_6_max_dsp_U86/toThreshold_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP1/DSP input A is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#24 Warning
+Input pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dmul_64ns_64ns_64_6_max_dsp_U86/toThreshold_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP2/DSP input A B is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#25 Warning
+Input pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dmul_64ns_64ns_64_6_max_dsp_U86/toThreshold_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP input B C is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#26 Warning
+Input pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dsub_64ns_64ns_64_5_full_dsp_U83/toThreshold_ap_dsub_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_ADD.DSP48E1_ADD/DSP input A B C is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#27 Warning
+Input pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dsub_64ns_64ns_64_5_full_dsp_U83/toThreshold_ap_dsub_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_GEN.DSP48E1_DEL/DSP input A B is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#28 Warning
+Input pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dsub_64ns_64ns_64_5_full_dsp_U83/toThreshold_ap_dsub_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP input B C is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#29 Warning
+Input pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dsub_64ns_64ns_64_5_full_dsp_U85/toThreshold_ap_dsub_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_ADD.DSP48E1_ADD/DSP input A B C is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#30 Warning
+Input pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dsub_64ns_64ns_64_5_full_dsp_U85/toThreshold_ap_dsub_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_GEN.DSP48E1_DEL/DSP input A B is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#31 Warning
+Input pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dsub_64ns_64ns_64_5_full_dsp_U85/toThreshold_ap_dsub_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP input B C is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-1#1 Warning
+Output pipelining  
+DSP i_system_wrapper/system_i/toGray_1/inst/toGray_U/toGray_CvtColor_U0/r_V_1_fu_227_p2 output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+DPOP-1#2 Warning
+Output pipelining  
+DSP i_system_wrapper/system_i/toGray_1/inst/toGray_U/toGray_CvtColor_U0/r_V_4_i_reg_332_reg output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+DPOP-1#3 Warning
+Output pipelining  
+DSP i_system_wrapper/system_i/toGray_1/inst/toGray_U/toGray_CvtColor_U0/tmp_i_cast_reg_337_reg output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+DPOP-1#4 Warning
+Output pipelining  
+DSP i_system_wrapper/system_i/toGray_1/inst/toGray_U/toGray_Equalize_U0/toGray_fmul_32ns_32ns_32_4_max_dsp_U20/toGray_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+DPOP-1#5 Warning
+Output pipelining  
+DSP i_system_wrapper/system_i/toGray_1/inst/toGray_U/toGray_Equalize_U0/toGray_fmul_32ns_32ns_32_4_max_dsp_U20/toGray_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/DSP output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+DPOP-1#6 Warning
+Output pipelining  
+DSP i_system_wrapper/system_i/toGray_1/inst/toGray_U/toGray_Equalize_U0/toGray_fmul_32ns_32ns_32_4_max_dsp_U20/toGray_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/DSP output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+DPOP-1#7 Warning
+Output pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_CvtColor_U0/r_V_1_fu_227_p2 output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+DPOP-1#8 Warning
+Output pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_CvtColor_U0/r_V_4_i_reg_332_reg output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+DPOP-1#9 Warning
+Output pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_CvtColor_U0/tmp_i_cast_reg_337_reg output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+DPOP-1#10 Warning
+Output pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_GaussianBlur_U0/grp_toThreshold_Filter2D_fu_37/p_Val2_11_2_2_reg_3304_reg output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+DPOP-1#11 Warning
+Output pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_GaussianBlur_U0/grp_toThreshold_Filter2D_fu_37/p_Val2_11_3_1_fu_1942_p2 output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+DPOP-1#12 Warning
+Output pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_GaussianBlur_U0/grp_toThreshold_Filter2D_fu_37/p_Val2_11_3_2_fu_1952_p2 output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+DPOP-1#13 Warning
+Output pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_GaussianBlur_U0/grp_toThreshold_Filter2D_fu_37/p_Val2_14_1_2_cast_reg_3294_reg output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+DPOP-1#14 Warning
+Output pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_GaussianBlur_U0/grp_toThreshold_Filter2D_fu_37/tmp20_cast_reg_3324_reg output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+DPOP-1#15 Warning
+Output pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_GaussianBlur_U0/grp_toThreshold_Filter2D_fu_37/tmp22_reg_3239_reg output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+DPOP-1#16 Warning
+Output pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_GaussianBlur_U0/grp_toThreshold_Filter2D_fu_37/tmp3_reg_3274_reg output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+DPOP-1#17 Warning
+Output pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_GaussianBlur_U0/grp_toThreshold_Filter2D_fu_37/tmp4_reg_3314_reg output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+DPOP-1#18 Warning
+Output pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_GaussianBlur_U0/grp_toThreshold_Filter2D_fu_37/tmp5_cast_reg_3319_reg output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+DPOP-1#19 Warning
+Output pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dadd_64ns_64ns_64_5_full_dsp_U84/toThreshold_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_ADD.DSP48E1_ADD/DSP output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+DPOP-1#20 Warning
+Output pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dadd_64ns_64ns_64_5_full_dsp_U84/toThreshold_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_GEN.DSP48E1_DEL/DSP output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+DPOP-1#21 Warning
+Output pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dadd_64ns_64ns_64_5_full_dsp_U84/toThreshold_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+DPOP-1#22 Warning
+Output pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dmul_64ns_64ns_64_6_max_dsp_U86/toThreshold_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP0/DSP output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+DPOP-1#23 Warning
+Output pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dmul_64ns_64ns_64_6_max_dsp_U86/toThreshold_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP1/DSP output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+DPOP-1#24 Warning
+Output pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dmul_64ns_64ns_64_6_max_dsp_U86/toThreshold_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP2/DSP output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+DPOP-1#25 Warning
+Output pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dmul_64ns_64ns_64_6_max_dsp_U86/toThreshold_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP3/DSP output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+DPOP-1#26 Warning
+Output pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dmul_64ns_64ns_64_6_max_dsp_U86/toThreshold_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP4/DSP output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+DPOP-1#27 Warning
+Output pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dmul_64ns_64ns_64_6_max_dsp_U86/toThreshold_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP5/DSP output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+DPOP-1#28 Warning
+Output pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dmul_64ns_64ns_64_6_max_dsp_U86/toThreshold_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP6/DSP output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+DPOP-1#29 Warning
+Output pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dmul_64ns_64ns_64_6_max_dsp_U86/toThreshold_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP7/DSP output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+DPOP-1#30 Warning
+Output pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dmul_64ns_64ns_64_6_max_dsp_U86/toThreshold_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP8/DSP output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+DPOP-1#31 Warning
+Output pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dmul_64ns_64ns_64_6_max_dsp_U86/toThreshold_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/FULL_MAX_USAGE.DSP9/DSP output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+DPOP-1#32 Warning
+Output pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dmul_64ns_64ns_64_6_max_dsp_U86/toThreshold_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+DPOP-1#33 Warning
+Output pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dsub_64ns_64ns_64_5_full_dsp_U83/toThreshold_ap_dsub_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_ADD.DSP48E1_ADD/DSP output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+DPOP-1#34 Warning
+Output pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dsub_64ns_64ns_64_5_full_dsp_U83/toThreshold_ap_dsub_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_GEN.DSP48E1_DEL/DSP output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+DPOP-1#35 Warning
+Output pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dsub_64ns_64ns_64_5_full_dsp_U83/toThreshold_ap_dsub_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+DPOP-1#36 Warning
+Output pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dsub_64ns_64ns_64_5_full_dsp_U85/toThreshold_ap_dsub_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_ADD.DSP48E1_ADD/DSP output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+DPOP-1#37 Warning
+Output pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dsub_64ns_64ns_64_5_full_dsp_U85/toThreshold_ap_dsub_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_GEN.DSP48E1_DEL/DSP output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+DPOP-1#38 Warning
+Output pipelining  
+DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dsub_64ns_64ns_64_5_full_dsp_U85/toThreshold_ap_dsub_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+IOCS-1#1 Warning
+IOB clock sharing  
+IOs hdmi_data_e, spdif placed at U16, U15 connects to flops which are clocked by i_system_wrapper/system_i/axi_hdmi_clkgen/inst/i_mmcm_drp/clk_0, i_system_wrapper/system_i/sys_audio_clkgen/inst/clk_out1.  Pushing these flops into IOB may cause PAR to fail because the clock route is shared between adjacent (differential pair) IOs.  If there are only two clocks packing them in different BELs might fix the problem, like INST IOB1_flop = BEL FF1 and INST IOB2_flop = BEL FF2.
+Related violations: <none>
+
+PLIO-7#1 Warning
+Placement Constraints Check for IO constraints  
+An IO Bus fixed_io_mio[53:0] with more than one IO standard is found. Components associated with this bus are:  fixed_io_mio[53] of IOStandard LVCMOS18; fixed_io_mio[52] of IOStandard LVCMOS18; fixed_io_mio[51] of IOStandard LVCMOS18; fixed_io_mio[50] of IOStandard LVCMOS18; fixed_io_mio[49] of IOStandard LVCMOS18; fixed_io_mio[48] of IOStandard LVCMOS18; fixed_io_mio[47] of IOStandard LVCMOS18; fixed_io_mio[46] of IOStandard LVCMOS18; fixed_io_mio[45] of IOStandard LVCMOS18; fixed_io_mio[44] of IOStandard LVCMOS18; fixed_io_mio[43] of IOStandard LVCMOS18; fixed_io_mio[42] of IOStandard LVCMOS18; fixed_io_mio[41] of IOStandard LVCMOS18; fixed_io_mio[40] of IOStandard LVCMOS18; fixed_io_mio[39] of IOStandard LVCMOS18; fixed_io_mio[38] of IOStandard LVCMOS18; fixed_io_mio[37] of IOStandard LVCMOS18; fixed_io_mio[36] of IOStandard LVCMOS18; fixed_io_mio[35] of IOStandard LVCMOS18; fixed_io_mio[34] of IOStandard LVCMOS18; fixed_io_mio[33] of IOStandard LVCMOS18; fixed_io_mio[32] of IOStandard LVCMOS18; fixed_io_mio[31] of IOStandard LVCMOS18; fixed_io_mio[30] of IOStandard LVCMOS18; fixed_io_mio[29] of IOStandard LVCMOS18; fixed_io_mio[28] of IOStandard LVCMOS18; fixed_io_mio[27] of IOStandard LVCMOS18; fixed_io_mio[26] of IOStandard LVCMOS18; fixed_io_mio[25] of IOStandard LVCMOS18; fixed_io_mio[24] of IOStandard LVCMOS18; fixed_io_mio[23] of IOStandard LVCMOS18; fixed_io_mio[22] of IOStandard LVCMOS18; fixed_io_mio[21] of IOStandard LVCMOS18; fixed_io_mio[20] of IOStandard LVCMOS18; fixed_io_mio[19] of IOStandard LVCMOS18; fixed_io_mio[18] of IOStandard LVCMOS18; fixed_io_mio[17] of IOStandard LVCMOS18; fixed_io_mio[16] of IOStandard LVCMOS18; fixed_io_mio[15] of IOStandard LVCMOS33; fixed_io_mio[14] of IOStandard LVCMOS33; fixed_io_mio[13] of IOStandard LVCMOS33; fixed_io_mio[12] of IOStandard LVCMOS33; fixed_io_mio[11] of IOStandard LVCMOS33; fixed_io_mio[10] of IOStandard LVCMOS33; fixed_io_mio[9] of IOStandard LVCMOS33; fixed_io_mio[8] of IOStandard LVCMOS33; fixed_io_mio[7] of IOStandard LVCMOS33; fixed_io_mio[6] of IOStandard LVCMOS33; fixed_io_mio[5] of IOStandard LVCMOS33; fixed_io_mio[4] of IOStandard LVCMOS33; fixed_io_mio[3] of IOStandard LVCMOS33; fixed_io_mio[2] of IOStandard LVCMOS33; fixed_io_mio[1] of IOStandard LVCMOS33; fixed_io_mio[0] of IOStandard LVCMOS33;
+Related violations: <none>
+
+PLIO-7#2 Warning
+Placement Constraints Check for IO constraints  
+An IO Bus gpio_bd[31:0] with more than one IO standard is found. Components associated with this bus are:  gpio_bd[31] of IOStandard LVCMOS18; gpio_bd[30] of IOStandard LVCMOS18; gpio_bd[29] of IOStandard LVCMOS18; gpio_bd[28] of IOStandard LVCMOS18; gpio_bd[27] of IOStandard LVCMOS18; gpio_bd[26] of IOStandard LVCMOS33; gpio_bd[25] of IOStandard LVCMOS33; gpio_bd[24] of IOStandard LVCMOS33; gpio_bd[23] of IOStandard LVCMOS33; gpio_bd[22] of IOStandard LVCMOS33; gpio_bd[21] of IOStandard LVCMOS33; gpio_bd[20] of IOStandard LVCMOS33; gpio_bd[19] of IOStandard LVCMOS33; gpio_bd[18] of IOStandard LVCMOS18; gpio_bd[17] of IOStandard LVCMOS18; gpio_bd[16] of IOStandard LVCMOS18; gpio_bd[15] of IOStandard LVCMOS18; gpio_bd[14] of IOStandard LVCMOS18; gpio_bd[13] of IOStandard LVCMOS18; gpio_bd[12] of IOStandard LVCMOS18; gpio_bd[11] of IOStandard LVCMOS18; gpio_bd[10] of IOStandard LVCMOS33; gpio_bd[9] of IOStandard LVCMOS33; gpio_bd[8] of IOStandard LVCMOS33; gpio_bd[7] of IOStandard LVCMOS33; gpio_bd[6] of IOStandard LVCMOS33; gpio_bd[5] of IOStandard LVCMOS33; gpio_bd[4] of IOStandard LVCMOS18; gpio_bd[3] of IOStandard LVCMOS18; gpio_bd[2] of IOStandard LVCMOS18; gpio_bd[1] of IOStandard LVCMOS18; gpio_bd[0] of IOStandard LVCMOS18;
+Related violations: <none>
+
+AVAL-4#1 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/i_csc_RGB2CrYCb/i_csc_1_Cb/i_mul_c1/i_mult_macro/dsp_v5_1.DSP48_V5_1: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#2 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/i_csc_RGB2CrYCb/i_csc_1_Cb/i_mul_c2/i_mult_macro/dsp_v5_1.DSP48_V5_1: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#3 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/i_csc_RGB2CrYCb/i_csc_1_Cb/i_mul_c3/i_mult_macro/dsp_v5_1.DSP48_V5_1: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#4 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/i_csc_RGB2CrYCb/i_csc_1_Cr/i_mul_c1/i_mult_macro/dsp_v5_1.DSP48_V5_1: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#5 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/i_csc_RGB2CrYCb/i_csc_1_Cr/i_mul_c2/i_mult_macro/dsp_v5_1.DSP48_V5_1: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#6 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/i_csc_RGB2CrYCb/i_csc_1_Cr/i_mul_c3/i_mult_macro/dsp_v5_1.DSP48_V5_1: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#7 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/i_csc_RGB2CrYCb/i_csc_1_Y/i_mul_c1/i_mult_macro/dsp_v5_1.DSP48_V5_1: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#8 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/i_csc_RGB2CrYCb/i_csc_1_Y/i_mul_c2/i_mult_macro/dsp_v5_1.DSP48_V5_1: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#9 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/i_csc_RGB2CrYCb/i_csc_1_Y/i_mul_c3/i_mult_macro/dsp_v5_1.DSP48_V5_1: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#10 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+i_system_wrapper/system_i/toGray_1/inst/toGray_U/toGray_Equalize_U0/toGray_fmul_32ns_32ns_32_4_max_dsp_U20/toGray_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#11 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+i_system_wrapper/system_i/toGray_1/inst/toGray_U/toGray_Equalize_U0/toGray_fmul_32ns_32ns_32_4_max_dsp_U20/toGray_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#12 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+i_system_wrapper/system_i/toGray_1/inst/toGray_U/toGray_Equalize_U0/toGray_fmul_32ns_32ns_32_4_max_dsp_U20/toGray_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#13 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dadd_64ns_64ns_64_5_full_dsp_U84/toThreshold_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_ADD.DSP48E1_ADD/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#14 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dadd_64ns_64ns_64_5_full_dsp_U84/toThreshold_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_GEN.DSP48E1_DEL/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#15 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dadd_64ns_64ns_64_5_full_dsp_U84/toThreshold_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#16 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dmul_64ns_64ns_64_6_max_dsp_U86/toThreshold_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP0/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#17 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dmul_64ns_64ns_64_6_max_dsp_U86/toThreshold_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP1/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#18 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dmul_64ns_64ns_64_6_max_dsp_U86/toThreshold_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP2/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#19 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dmul_64ns_64ns_64_6_max_dsp_U86/toThreshold_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP3/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#20 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dmul_64ns_64ns_64_6_max_dsp_U86/toThreshold_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP4/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#21 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dmul_64ns_64ns_64_6_max_dsp_U86/toThreshold_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP5/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#22 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dmul_64ns_64ns_64_6_max_dsp_U86/toThreshold_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP6/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#23 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dmul_64ns_64ns_64_6_max_dsp_U86/toThreshold_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP7/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#24 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dmul_64ns_64ns_64_6_max_dsp_U86/toThreshold_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP8/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#25 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dmul_64ns_64ns_64_6_max_dsp_U86/toThreshold_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/FULL_MAX_USAGE.DSP9/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#26 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dmul_64ns_64ns_64_6_max_dsp_U86/toThreshold_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#27 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dsub_64ns_64ns_64_5_full_dsp_U83/toThreshold_ap_dsub_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_ADD.DSP48E1_ADD/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#28 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dsub_64ns_64ns_64_5_full_dsp_U83/toThreshold_ap_dsub_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_GEN.DSP48E1_DEL/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#29 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dsub_64ns_64ns_64_5_full_dsp_U83/toThreshold_ap_dsub_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#30 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dsub_64ns_64ns_64_5_full_dsp_U85/toThreshold_ap_dsub_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_ADD.DSP48E1_ADD/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#31 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dsub_64ns_64ns_64_5_full_dsp_U85/toThreshold_ap_dsub_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_GEN.DSP48E1_DEL/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#32 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dsub_64ns_64ns_64_5_full_dsp_U85/toThreshold_ap_dsub_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#1 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+i_system_wrapper/system_i/toGray_1/inst/toGray_U/toGray_Equalize_U0/toGray_fmul_32ns_32ns_32_4_max_dsp_U20/toGray_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#2 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dadd_64ns_64ns_64_5_full_dsp_U84/toThreshold_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_ADD.DSP48E1_ADD/DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#3 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dadd_64ns_64ns_64_5_full_dsp_U84/toThreshold_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_GEN.DSP48E1_DEL/DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#4 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dadd_64ns_64ns_64_5_full_dsp_U84/toThreshold_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#5 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dmul_64ns_64ns_64_6_max_dsp_U86/toThreshold_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#6 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dsub_64ns_64ns_64_5_full_dsp_U83/toThreshold_ap_dsub_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_ADD.DSP48E1_ADD/DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#7 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dsub_64ns_64ns_64_5_full_dsp_U83/toThreshold_ap_dsub_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_GEN.DSP48E1_DEL/DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#8 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dsub_64ns_64ns_64_5_full_dsp_U83/toThreshold_ap_dsub_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#9 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dsub_64ns_64ns_64_5_full_dsp_U85/toThreshold_ap_dsub_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_ADD.DSP48E1_ADD/DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#10 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dsub_64ns_64ns_64_5_full_dsp_U85/toThreshold_ap_dsub_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_GEN.DSP48E1_DEL/DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#11 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dsub_64ns_64ns_64_5_full_dsp_U85/toThreshold_ap_dsub_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+

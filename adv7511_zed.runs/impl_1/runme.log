@@ -1,0 +1,939 @@
+
+*** Running vivado
+    with args -log system_top.vdi -applog -m64 -messageDb vivado.pb -mode batch -source system_top.tcl -notrace
+
+
+****** Vivado v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source system_top.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 3029 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2014.4
+Loading clock regions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z020/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z020/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z020/clg484/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.4/data\./parts/xilinx/zynq/IOStandards.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+WARNING: [Constraints 18-1079] Register i_system_wrapper/system_i/axi_hp0_interconnect/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and i_system_wrapper/system_i/axi_hp0_interconnect/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register i_system_wrapper/system_i/axi_hp0_interconnect/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and i_system_wrapper/system_i/axi_hp0_interconnect/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register i_system_wrapper/system_i/axi_interconnect_img_process/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and i_system_wrapper/system_i/axi_interconnect_img_process/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register i_system_wrapper/system_i/axi_interconnect_img_process/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and i_system_wrapper/system_i/axi_interconnect_img_process/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register i_system_wrapper/system_i/axi_interconnect_img_process/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and i_system_wrapper/system_i/axi_interconnect_img_process/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register i_system_wrapper/system_i/axi_interconnect_img_process/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and i_system_wrapper/system_i/axi_interconnect_img_process/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register i_system_wrapper/system_i/axi_interconnect_img_process/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and i_system_wrapper/system_i/axi_interconnect_img_process/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register i_system_wrapper/system_i/axi_interconnect_img_process/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and i_system_wrapper/system_i/axi_interconnect_img_process/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+Parsing XDC File [c:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.srcs/sources_1/bd/system/ip/system_sys_ps7_0/system_sys_ps7_0.xdc] for cell 'i_system_wrapper/system_i/sys_ps7/inst'
+Finished Parsing XDC File [c:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.srcs/sources_1/bd/system/ip/system_sys_ps7_0/system_sys_ps7_0.xdc] for cell 'i_system_wrapper/system_i/sys_ps7/inst'
+Parsing XDC File [c:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_iic_main_0/system_axi_iic_main_0_board.xdc] for cell 'i_system_wrapper/system_i/axi_iic_main'
+Finished Parsing XDC File [c:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_iic_main_0/system_axi_iic_main_0_board.xdc] for cell 'i_system_wrapper/system_i/axi_iic_main'
+Parsing XDC File [c:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.srcs/sources_1/bd/system/ip/system_sys_rstgen_0/system_sys_rstgen_0_board.xdc] for cell 'i_system_wrapper/system_i/sys_rstgen'
+Finished Parsing XDC File [c:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.srcs/sources_1/bd/system/ip/system_sys_rstgen_0/system_sys_rstgen_0_board.xdc] for cell 'i_system_wrapper/system_i/sys_rstgen'
+Parsing XDC File [c:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.srcs/sources_1/bd/system/ip/system_sys_rstgen_0/system_sys_rstgen_0.xdc] for cell 'i_system_wrapper/system_i/sys_rstgen'
+Finished Parsing XDC File [c:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.srcs/sources_1/bd/system/ip/system_sys_rstgen_0/system_sys_rstgen_0.xdc] for cell 'i_system_wrapper/system_i/sys_rstgen'
+Parsing XDC File [c:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_dma/U0'
+Finished Parsing XDC File [c:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_dma/U0'
+Parsing XDC File [c:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.srcs/sources_1/bd/system/ip/system_sys_audio_clkgen_0/system_sys_audio_clkgen_0_board.xdc] for cell 'i_system_wrapper/system_i/sys_audio_clkgen/inst'
+Finished Parsing XDC File [c:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.srcs/sources_1/bd/system/ip/system_sys_audio_clkgen_0/system_sys_audio_clkgen_0_board.xdc] for cell 'i_system_wrapper/system_i/sys_audio_clkgen/inst'
+Parsing XDC File [c:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.srcs/sources_1/bd/system/ip/system_sys_audio_clkgen_0/system_sys_audio_clkgen_0.xdc] for cell 'i_system_wrapper/system_i/sys_audio_clkgen/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.srcs/sources_1/bd/system/ip/system_sys_audio_clkgen_0/system_sys_audio_clkgen_0.xdc:56]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.srcs/sources_1/bd/system/ip/system_sys_audio_clkgen_0/system_sys_audio_clkgen_0.xdc:56]
+get_clocks: Time (s): cpu = 00:00:17 ; elapsed = 00:00:16 . Memory (MB): peak = 1194.680 ; gain = 540.418
+Finished Parsing XDC File [c:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.srcs/sources_1/bd/system/ip/system_sys_audio_clkgen_0/system_sys_audio_clkgen_0.xdc] for cell 'i_system_wrapper/system_i/sys_audio_clkgen/inst'
+Parsing XDC File [c:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_iic_fmc_0/system_axi_iic_fmc_0_board.xdc] for cell 'i_system_wrapper/system_i/axi_iic_fmc'
+Finished Parsing XDC File [c:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_iic_fmc_0/system_axi_iic_fmc_0_board.xdc] for cell 'i_system_wrapper/system_i/axi_iic_fmc'
+Parsing XDC File [c:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_vdma_0_0_1/system_axi_vdma_0_0.xdc] for cell 'i_system_wrapper/system_i/axi_vdma_img_process/U0'
+Finished Parsing XDC File [c:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_vdma_0_0_1/system_axi_vdma_0_0.xdc] for cell 'i_system_wrapper/system_i/axi_vdma_img_process/U0'
+Parsing XDC File [c:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_vdma_img_process_0/system_axi_vdma_img_process_0.xdc] for cell 'i_system_wrapper/system_i/axi_vdma_img_process1/U0'
+Finished Parsing XDC File [c:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_vdma_img_process_0/system_axi_vdma_img_process_0.xdc] for cell 'i_system_wrapper/system_i/axi_vdma_img_process1/U0'
+Parsing XDC File [C:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/common/zed/zed_system_constr.xdc]
+Finished Parsing XDC File [C:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/common/zed/zed_system_constr.xdc]
+Parsing XDC File [c:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.srcs/sources_1/ipshared/analog.com/axi_clkgen_v1_0/eb15edc8/axi_clkgen_constr.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_clkgen'
+Finished Parsing XDC File [c:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.srcs/sources_1/ipshared/analog.com/axi_clkgen_v1_0/eb15edc8/axi_clkgen_constr.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_clkgen'
+Parsing XDC File [c:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.srcs/sources_1/ipshared/analog.com/axi_hdmi_tx_v1_0/8027155a/axi_hdmi_tx_constr.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_core'
+Finished Parsing XDC File [c:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.srcs/sources_1/ipshared/analog.com/axi_hdmi_tx_v1_0/8027155a/axi_hdmi_tx_constr.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_core'
+Parsing XDC File [c:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_clocks.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_dma/U0'
+Finished Parsing XDC File [c:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_clocks.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_dma/U0'
+Parsing XDC File [c:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.srcs/sources_1/ipshared/analog.com/axi_spdif_tx_v1_0/dce0d057/axi_spdif_tx_constr.xdc] for cell 'i_system_wrapper/system_i/axi_spdif_tx_core'
+Finished Parsing XDC File [c:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.srcs/sources_1/ipshared/analog.com/axi_spdif_tx_v1_0/dce0d057/axi_spdif_tx_constr.xdc] for cell 'i_system_wrapper/system_i/axi_spdif_tx_core'
+Parsing XDC File [c:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.srcs/sources_1/ipshared/analog.com/axi_i2s_adi_v1_0/4c7b9390/axi_i2s_adi_constr.xdc] for cell 'i_system_wrapper/system_i/axi_i2s_adi'
+Finished Parsing XDC File [c:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.srcs/sources_1/ipshared/analog.com/axi_i2s_adi_v1_0/4c7b9390/axi_i2s_adi_constr.xdc] for cell 'i_system_wrapper/system_i/axi_i2s_adi'
+Parsing XDC File [c:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_vdma_0_0_1/system_axi_vdma_0_0_clocks.xdc] for cell 'i_system_wrapper/system_i/axi_vdma_img_process/U0'
+Finished Parsing XDC File [c:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_vdma_0_0_1/system_axi_vdma_0_0_clocks.xdc] for cell 'i_system_wrapper/system_i/axi_vdma_img_process/U0'
+Parsing XDC File [c:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_vdma_img_process_0/system_axi_vdma_img_process_0_clocks.xdc] for cell 'i_system_wrapper/system_i/axi_vdma_img_process1/U0'
+Finished Parsing XDC File [c:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_vdma_img_process_0/system_axi_vdma_img_process_0_clocks.xdc] for cell 'i_system_wrapper/system_i/axi_vdma_img_process1/U0'
+Parsing XDC File [c:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.srcs/sources_1/bd/system/ip/system_auto_us_0/system_auto_us_0_clocks.xdc] for cell 'i_system_wrapper/system_i/axi_interconnect_img_process/s00_couplers/auto_us/inst'
+Finished Parsing XDC File [c:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.srcs/sources_1/bd/system/ip/system_auto_us_0/system_auto_us_0_clocks.xdc] for cell 'i_system_wrapper/system_i/axi_interconnect_img_process/s00_couplers/auto_us/inst'
+Parsing XDC File [c:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.srcs/sources_1/bd/system/ip/system_auto_us_1/system_auto_us_1_clocks.xdc] for cell 'i_system_wrapper/system_i/axi_interconnect_img_process/s01_couplers/auto_us/inst'
+Finished Parsing XDC File [c:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.srcs/sources_1/bd/system/ip/system_auto_us_1/system_auto_us_1_clocks.xdc] for cell 'i_system_wrapper/system_i/axi_interconnect_img_process/s01_couplers/auto_us/inst'
+Parsing XDC File [c:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.srcs/sources_1/bd/system/ip/system_auto_us_2/system_auto_us_2_clocks.xdc] for cell 'i_system_wrapper/system_i/axi_interconnect_img_process/s02_couplers/auto_us/inst'
+Finished Parsing XDC File [c:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.srcs/sources_1/bd/system/ip/system_auto_us_2/system_auto_us_2_clocks.xdc] for cell 'i_system_wrapper/system_i/axi_interconnect_img_process/s02_couplers/auto_us/inst'
+Parsing XDC File [c:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.srcs/sources_1/bd/system/ip/system_auto_us_3/system_auto_us_3_clocks.xdc] for cell 'i_system_wrapper/system_i/axi_interconnect_img_process/s03_couplers/auto_us/inst'
+Finished Parsing XDC File [c:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.srcs/sources_1/bd/system/ip/system_auto_us_3/system_auto_us_3_clocks.xdc] for cell 'i_system_wrapper/system_i/axi_interconnect_img_process/s03_couplers/auto_us/inst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 62 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 38 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 22 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 2 instances
+
+link_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:43 . Memory (MB): peak = 1195.859 ; gain = 1000.535
+Command: opt_design -directive Explore
+INFO: [Vivado_Tcl 4-136] Directive used for opt_design is: Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-1223] The version limit for your license is '2015.02' and will expire in -118 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.672 . Memory (MB): peak = 1195.859 ; gain = 0.000
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+
+INFO: [Opt 31-138] Pushed 4 inverter(s) to 4 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 214e61af2
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1195.859 ; gain = 0.000
+
+Phase 2 Constant Propagation
+INFO: [Opt 31-138] Pushed 5 inverter(s) to 5 load pin(s).
+INFO: [Opt 31-10] Eliminated 1194 cells.
+Phase 2 Constant Propagation | Checksum: 1a09228b0
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1195.859 ; gain = 0.000
+
+Phase 3 Sweep
+WARNING: [Opt 31-6] Deleting driverless net: i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dcmp_64ns_64ns_1_1_U88/toThreshold_ap_dcmp_0_no_dsp_64_u/U0/i_synth/COMP_OP.SPD.OP/STRUCT_CMP.A_EXP_ALL_ONE_DET/CARRYS_OUT[0].
+WARNING: [Opt 31-6] Deleting driverless net: i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dcmp_64ns_64ns_1_1_U88/toThreshold_ap_dcmp_0_no_dsp_64_u/U0/i_synth/COMP_OP.SPD.OP/STRUCT_CMP.A_FRAC_NOT_ZERO_DET/CARRY_OUT.
+WARNING: [Opt 31-6] Deleting driverless net: i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dcmp_64ns_64ns_1_1_U88/toThreshold_ap_dcmp_0_no_dsp_64_u/U0/i_synth/COMP_OP.SPD.OP/STRUCT_CMP.B_EXP_ALL_ONE_DET/CARRYS_OUT[0].
+WARNING: [Opt 31-6] Deleting driverless net: i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dcmp_64ns_64ns_1_1_U88/toThreshold_ap_dcmp_0_no_dsp_64_u/U0/i_synth/COMP_OP.SPD.OP/STRUCT_CMP.B_FRAC_NOT_ZERO_DET/CARRY_OUT.
+WARNING: [Opt 31-6] Deleting driverless net: i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dcmp_64ns_64ns_1_1_U89/toThreshold_ap_dcmp_0_no_dsp_64_u/U0/i_synth/COMP_OP.SPD.OP/STRUCT_CMP.A_EXP_ALL_ONE_DET/CARRYS_OUT[0].
+WARNING: [Opt 31-6] Deleting driverless net: i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dcmp_64ns_64ns_1_1_U89/toThreshold_ap_dcmp_0_no_dsp_64_u/U0/i_synth/COMP_OP.SPD.OP/STRUCT_CMP.A_FRAC_NOT_ZERO_DET/CARRY_OUT.
+WARNING: [Opt 31-6] Deleting driverless net: i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dcmp_64ns_64ns_1_1_U89/toThreshold_ap_dcmp_0_no_dsp_64_u/U0/i_synth/COMP_OP.SPD.OP/STRUCT_CMP.B_EXP_ALL_ONE_DET/CARRYS_OUT[0].
+WARNING: [Opt 31-6] Deleting driverless net: i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dcmp_64ns_64ns_1_1_U89/toThreshold_ap_dcmp_0_no_dsp_64_u/U0/i_synth/COMP_OP.SPD.OP/STRUCT_CMP.B_FRAC_NOT_ZERO_DET/CARRY_OUT.
+WARNING: [Opt 31-6] Deleting driverless net: i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dcmp_64ns_64ns_1_1_U90/toThreshold_ap_dcmp_0_no_dsp_64_u/U0/i_synth/COMP_OP.SPD.OP/STRUCT_CMP.A_EXP_ALL_ONE_DET/CARRYS_OUT[0].
+WARNING: [Opt 31-6] Deleting driverless net: i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dcmp_64ns_64ns_1_1_U90/toThreshold_ap_dcmp_0_no_dsp_64_u/U0/i_synth/COMP_OP.SPD.OP/STRUCT_CMP.A_FRAC_NOT_ZERO_DET/CARRY_OUT.
+WARNING: [Opt 31-6] Deleting driverless net: i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dcmp_64ns_64ns_1_1_U90/toThreshold_ap_dcmp_0_no_dsp_64_u/U0/i_synth/COMP_OP.SPD.OP/STRUCT_CMP.B_EXP_ALL_ONE_DET/CARRYS_OUT[0].
+WARNING: [Opt 31-6] Deleting driverless net: i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dcmp_64ns_64ns_1_1_U90/toThreshold_ap_dcmp_0_no_dsp_64_u/U0/i_synth/COMP_OP.SPD.OP/STRUCT_CMP.B_FRAC_NOT_ZERO_DET/CARRY_OUT.
+WARNING: [Opt 31-6] Deleting driverless net: i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dcmp_64ns_64ns_1_1_U91/toThreshold_ap_dcmp_0_no_dsp_64_u/U0/i_synth/COMP_OP.SPD.OP/STRUCT_CMP.A_EXP_ALL_ONE_DET/CARRYS_OUT[0].
+WARNING: [Opt 31-6] Deleting driverless net: i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dcmp_64ns_64ns_1_1_U91/toThreshold_ap_dcmp_0_no_dsp_64_u/U0/i_synth/COMP_OP.SPD.OP/STRUCT_CMP.A_FRAC_NOT_ZERO_DET/CARRY_OUT.
+WARNING: [Opt 31-6] Deleting driverless net: i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dcmp_64ns_64ns_1_1_U91/toThreshold_ap_dcmp_0_no_dsp_64_u/U0/i_synth/COMP_OP.SPD.OP/STRUCT_CMP.B_EXP_ALL_ONE_DET/CARRYS_OUT[0].
+WARNING: [Opt 31-6] Deleting driverless net: i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dcmp_64ns_64ns_1_1_U91/toThreshold_ap_dcmp_0_no_dsp_64_u/U0/i_synth/COMP_OP.SPD.OP/STRUCT_CMP.B_FRAC_NOT_ZERO_DET/CARRY_OUT.
+WARNING: [Opt 31-6] Deleting driverless net: i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dcmp_64ns_64ns_1_1_U92/toThreshold_ap_dcmp_0_no_dsp_64_u/U0/i_synth/COMP_OP.SPD.OP/STRUCT_CMP.A_EXP_ALL_ONE_DET/CARRYS_OUT[0].
+WARNING: [Opt 31-6] Deleting driverless net: i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dcmp_64ns_64ns_1_1_U92/toThreshold_ap_dcmp_0_no_dsp_64_u/U0/i_synth/COMP_OP.SPD.OP/STRUCT_CMP.A_FRAC_NOT_ZERO_DET/CARRY_OUT.
+WARNING: [Opt 31-6] Deleting driverless net: i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dcmp_64ns_64ns_1_1_U92/toThreshold_ap_dcmp_0_no_dsp_64_u/U0/i_synth/COMP_OP.SPD.OP/STRUCT_CMP.B_EXP_ALL_ONE_DET/CARRYS_OUT[0].
+WARNING: [Opt 31-6] Deleting driverless net: i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dcmp_64ns_64ns_1_1_U92/toThreshold_ap_dcmp_0_no_dsp_64_u/U0/i_synth/COMP_OP.SPD.OP/STRUCT_CMP.B_FRAC_NOT_ZERO_DET/CARRY_OUT.
+INFO: [Opt 31-12] Eliminated 11480 unconnected nets.
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-11] Eliminated 1219 unconnected cells.
+Phase 3 Sweep | Checksum: 1b5305d40
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1195.859 ; gain = 0.000
+
+Phase 4 Constant Propagation
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+INFO: [Opt 31-10] Eliminated 0 cells.
+Phase 4 Constant Propagation | Checksum: 1a95309e4
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1195.859 ; gain = 0.000
+
+Phase 5 Sweep
+INFO: [Opt 31-12] Eliminated 0 unconnected nets.
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-11] Eliminated 0 unconnected cells.
+Phase 5 Sweep | Checksum: 13e5308f8
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1195.859 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 13e5308f8
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:25 . Memory (MB): peak = 1195.859 ; gain = 0.000
+Implement Debug Cores | Checksum: 187c22c15
+Logic Optimization | Checksum: 187c22c15
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 3.13 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 33 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 12 newly gated: 1 Total Ports: 66
+Ending PowerOpt Patch Enables Task | Checksum: 164def3c1
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 1370.176 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 164def3c1
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 1370.176 ; gain = 174.316
+INFO: [Common 17-83] Releasing license: Implementation
+36 Infos, 28 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1370.176 ; gain = 174.316
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.131 . Memory (MB): peak = 1370.176 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1370.176 ; gain = 0.000
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.runs/impl_1/system_top_drc_opted.rpt.
+Command: place_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-1223] The version limit for your license is '2015.02' and will expire in -118 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 46-5] The placer was invoked with the 'Explore' directive.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Runtime Estimator
+Phase 1 Placer Runtime Estimator | Checksum: 13b093e4b
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.763 . Memory (MB): peak = 1370.176 ; gain = 0.000
+
+Phase 2 Placer Initialization
+
+Phase 2.1 Placer Initialization Core
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.242 . Memory (MB): peak = 1370.176 ; gain = 0.000
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.113 . Memory (MB): peak = 1370.176 ; gain = 0.000
+
+Phase 2.1.1 IO Placement/ Clock Placement/ Build Placer Device
+
+Phase 2.1.1.1 Pre-Place Cells
+Phase 2.1.1.1 Pre-Place Cells | Checksum: b0a16c5c
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1370.176 ; gain = 0.000
+WARNING: [Constraints 18-1079] Register i_system_wrapper/system_i/axi_hp0_interconnect/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and i_system_wrapper/system_i/axi_hp0_interconnect/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register i_system_wrapper/system_i/axi_hp0_interconnect/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and i_system_wrapper/system_i/axi_hp0_interconnect/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register i_system_wrapper/system_i/axi_interconnect_img_process/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and i_system_wrapper/system_i/axi_interconnect_img_process/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register i_system_wrapper/system_i/axi_interconnect_img_process/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and i_system_wrapper/system_i/axi_interconnect_img_process/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register i_system_wrapper/system_i/axi_interconnect_img_process/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and i_system_wrapper/system_i/axi_interconnect_img_process/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register i_system_wrapper/system_i/axi_interconnect_img_process/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and i_system_wrapper/system_i/axi_interconnect_img_process/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register i_system_wrapper/system_i/axi_interconnect_img_process/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and i_system_wrapper/system_i/axi_interconnect_img_process/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register i_system_wrapper/system_i/axi_interconnect_img_process/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and i_system_wrapper/system_i/axi_interconnect_img_process/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Place 30-12] An IO Bus fixed_io_mio with more than one IO standard is found. Components associated with this bus are: 
+	fixed_io_mio[53] of IOStandard LVCMOS18
+	fixed_io_mio[52] of IOStandard LVCMOS18
+	fixed_io_mio[51] of IOStandard LVCMOS18
+	fixed_io_mio[50] of IOStandard LVCMOS18
+	fixed_io_mio[49] of IOStandard LVCMOS18
+	fixed_io_mio[48] of IOStandard LVCMOS18
+	fixed_io_mio[47] of IOStandard LVCMOS18
+	fixed_io_mio[46] of IOStandard LVCMOS18
+	fixed_io_mio[45] of IOStandard LVCMOS18
+	fixed_io_mio[44] of IOStandard LVCMOS18
+	fixed_io_mio[43] of IOStandard LVCMOS18
+	fixed_io_mio[42] of IOStandard LVCMOS18
+	fixed_io_mio[41] of IOStandard LVCMOS18
+	fixed_io_mio[40] of IOStandard LVCMOS18
+	fixed_io_mio[39] of IOStandard LVCMOS18
+	fixed_io_mio[38] of IOStandard LVCMOS18
+	fixed_io_mio[37] of IOStandard LVCMOS18
+	fixed_io_mio[36] of IOStandard LVCMOS18
+	fixed_io_mio[35] of IOStandard LVCMOS18
+	fixed_io_mio[34] of IOStandard LVCMOS18
+	fixed_io_mio[33] of IOStandard LVCMOS18
+	fixed_io_mio[32] of IOStandard LVCMOS18
+	fixed_io_mio[31] of IOStandard LVCMOS18
+	fixed_io_mio[30] of IOStandard LVCMOS18
+	fixed_io_mio[29] of IOStandard LVCMOS18
+	fixed_io_mio[28] of IOStandard LVCMOS18
+	fixed_io_mio[27] of IOStandard LVCMOS18
+	fixed_io_mio[26] of IOStandard LVCMOS18
+	fixed_io_mio[25] of IOStandard LVCMOS18
+	fixed_io_mio[24] of IOStandard LVCMOS18
+	fixed_io_mio[23] of IOStandard LVCMOS18
+	fixed_io_mio[22] of IOStandard LVCMOS18
+	fixed_io_mio[21] of IOStandard LVCMOS18
+	fixed_io_mio[20] of IOStandard LVCMOS18
+	fixed_io_mio[19] of IOStandard LVCMOS18
+	fixed_io_mio[18] of IOStandard LVCMOS18
+	fixed_io_mio[17] of IOStandard LVCMOS18
+	fixed_io_mio[16] of IOStandard LVCMOS18
+	fixed_io_mio[15] of IOStandard LVCMOS33
+	fixed_io_mio[14] of IOStandard LVCMOS33
+	fixed_io_mio[13] of IOStandard LVCMOS33
+	fixed_io_mio[12] of IOStandard LVCMOS33
+	fixed_io_mio[11] of IOStandard LVCMOS33
+	fixed_io_mio[10] of IOStandard LVCMOS33
+	fixed_io_mio[9] of IOStandard LVCMOS33
+	fixed_io_mio[8] of IOStandard LVCMOS33
+	fixed_io_mio[7] of IOStandard LVCMOS33
+	fixed_io_mio[6] of IOStandard LVCMOS33
+	fixed_io_mio[5] of IOStandard LVCMOS33
+	fixed_io_mio[4] of IOStandard LVCMOS33
+	fixed_io_mio[3] of IOStandard LVCMOS33
+	fixed_io_mio[2] of IOStandard LVCMOS33
+	fixed_io_mio[1] of IOStandard LVCMOS33
+	fixed_io_mio[0] of IOStandard LVCMOS33
+WARNING: [Place 30-12] An IO Bus gpio_bd with more than one IO standard is found. Components associated with this bus are: 
+	gpio_bd[31] of IOStandard LVCMOS18
+	gpio_bd[30] of IOStandard LVCMOS18
+	gpio_bd[29] of IOStandard LVCMOS18
+	gpio_bd[28] of IOStandard LVCMOS18
+	gpio_bd[27] of IOStandard LVCMOS18
+	gpio_bd[26] of IOStandard LVCMOS33
+	gpio_bd[25] of IOStandard LVCMOS33
+	gpio_bd[24] of IOStandard LVCMOS33
+	gpio_bd[23] of IOStandard LVCMOS33
+	gpio_bd[22] of IOStandard LVCMOS33
+	gpio_bd[21] of IOStandard LVCMOS33
+	gpio_bd[20] of IOStandard LVCMOS33
+	gpio_bd[19] of IOStandard LVCMOS33
+	gpio_bd[18] of IOStandard LVCMOS18
+	gpio_bd[17] of IOStandard LVCMOS18
+	gpio_bd[16] of IOStandard LVCMOS18
+	gpio_bd[15] of IOStandard LVCMOS18
+	gpio_bd[14] of IOStandard LVCMOS18
+	gpio_bd[13] of IOStandard LVCMOS18
+	gpio_bd[12] of IOStandard LVCMOS18
+	gpio_bd[11] of IOStandard LVCMOS18
+	gpio_bd[10] of IOStandard LVCMOS33
+	gpio_bd[9] of IOStandard LVCMOS33
+	gpio_bd[8] of IOStandard LVCMOS33
+	gpio_bd[7] of IOStandard LVCMOS33
+	gpio_bd[6] of IOStandard LVCMOS33
+	gpio_bd[5] of IOStandard LVCMOS33
+	gpio_bd[4] of IOStandard LVCMOS18
+	gpio_bd[3] of IOStandard LVCMOS18
+	gpio_bd[2] of IOStandard LVCMOS18
+	gpio_bd[1] of IOStandard LVCMOS18
+	gpio_bd[0] of IOStandard LVCMOS18
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 2.1.1.2 IO & Clk Clean Up
+Phase 2.1.1.2 IO & Clk Clean Up | Checksum: b0a16c5c
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1370.176 ; gain = 0.000
+
+Phase 2.1.1.3 Implementation Feasibility check On IDelay
+Phase 2.1.1.3 Implementation Feasibility check On IDelay | Checksum: b0a16c5c
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1370.176 ; gain = 0.000
+
+Phase 2.1.1.4 Commit IO Placement
+Phase 2.1.1.4 Commit IO Placement | Checksum: 279428a5
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1370.176 ; gain = 0.000
+Phase 2.1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: f793e2a4
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1370.176 ; gain = 0.000
+
+Phase 2.1.2 Build Placer Netlist Model
+
+Phase 2.1.2.1 Place Init Design
+
+Phase 2.1.2.1.1 Init Lut Pin Assignment
+Phase 2.1.2.1.1 Init Lut Pin Assignment | Checksum: 1d8fec57e
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1370.176 ; gain = 0.000
+Phase 2.1.2.1 Place Init Design | Checksum: 1f28e5473
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:40 . Memory (MB): peak = 1370.176 ; gain = 0.000
+Phase 2.1.2 Build Placer Netlist Model | Checksum: 1f28e5473
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:40 . Memory (MB): peak = 1370.176 ; gain = 0.000
+
+Phase 2.1.3 Constrain Clocks/Macros
+
+Phase 2.1.3.1 Constrain Global/Regional Clocks
+Phase 2.1.3.1 Constrain Global/Regional Clocks | Checksum: 1f28e5473
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:40 . Memory (MB): peak = 1370.176 ; gain = 0.000
+Phase 2.1.3 Constrain Clocks/Macros | Checksum: 1f28e5473
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:40 . Memory (MB): peak = 1370.176 ; gain = 0.000
+Phase 2.1 Placer Initialization Core | Checksum: 1f28e5473
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:40 . Memory (MB): peak = 1370.176 ; gain = 0.000
+Phase 2 Placer Initialization | Checksum: 1f28e5473
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:40 . Memory (MB): peak = 1370.176 ; gain = 0.000
+
+Phase 3 Global Placement
+Phase 3 Global Placement | Checksum: 149781db4
+
+Time (s): cpu = 00:01:59 ; elapsed = 00:01:19 . Memory (MB): peak = 1370.176 ; gain = 0.000
+
+Phase 4 Detail Placement
+
+Phase 4.1 Commit Multi Column Macros
+Phase 4.1 Commit Multi Column Macros | Checksum: 149781db4
+
+Time (s): cpu = 00:01:59 ; elapsed = 00:01:20 . Memory (MB): peak = 1370.176 ; gain = 0.000
+
+Phase 4.2 Commit Most Macros & LUTRAMs
+Phase 4.2 Commit Most Macros & LUTRAMs | Checksum: 284a572f8
+
+Time (s): cpu = 00:02:20 ; elapsed = 00:01:33 . Memory (MB): peak = 1370.176 ; gain = 0.000
+
+Phase 4.3 Area Swap Optimization
+Phase 4.3 Area Swap Optimization | Checksum: 25dd24eb5
+
+Time (s): cpu = 00:02:20 ; elapsed = 00:01:33 . Memory (MB): peak = 1370.176 ; gain = 0.000
+
+Phase 4.4 updateClock Trees: DP
+Phase 4.4 updateClock Trees: DP | Checksum: 25dd24eb5
+
+Time (s): cpu = 00:02:21 ; elapsed = 00:01:34 . Memory (MB): peak = 1370.176 ; gain = 0.000
+
+Phase 4.5 Timing Path Optimizer
+Phase 4.5 Timing Path Optimizer | Checksum: 24f5519f5
+
+Time (s): cpu = 00:02:28 ; elapsed = 00:01:38 . Memory (MB): peak = 1370.176 ; gain = 0.000
+
+Phase 4.6 Small Shape Detail Placement
+
+Phase 4.6.1 Commit Small Macros & Core Logic
+
+Phase 4.6.1.1 setBudgets
+Phase 4.6.1.1 setBudgets | Checksum: 227804e5b
+
+Time (s): cpu = 00:02:28 ; elapsed = 00:01:38 . Memory (MB): peak = 1370.176 ; gain = 0.000
+
+Phase 4.6.1.2 Commit Slice Clusters
+Phase 4.6.1.2 Commit Slice Clusters | Checksum: 1d9a07c9f
+
+Time (s): cpu = 00:02:41 ; elapsed = 00:01:49 . Memory (MB): peak = 1370.617 ; gain = 0.441
+Phase 4.6.1 Commit Small Macros & Core Logic | Checksum: 1d9a07c9f
+
+Time (s): cpu = 00:02:41 ; elapsed = 00:01:49 . Memory (MB): peak = 1370.617 ; gain = 0.441
+
+Phase 4.6.2 Clock Restriction Legalization for Leaf Columns
+Phase 4.6.2 Clock Restriction Legalization for Leaf Columns | Checksum: 1d9a07c9f
+
+Time (s): cpu = 00:02:41 ; elapsed = 00:01:50 . Memory (MB): peak = 1373.859 ; gain = 3.684
+
+Phase 4.6.3 Clock Restriction Legalization for Non-Clock Pins
+Phase 4.6.3 Clock Restriction Legalization for Non-Clock Pins | Checksum: 1d9a07c9f
+
+Time (s): cpu = 00:02:42 ; elapsed = 00:01:50 . Memory (MB): peak = 1374.871 ; gain = 4.695
+Phase 4.6 Small Shape Detail Placement | Checksum: 1d9a07c9f
+
+Time (s): cpu = 00:02:42 ; elapsed = 00:01:50 . Memory (MB): peak = 1374.871 ; gain = 4.695
+
+Phase 4.7 Re-assign LUT pins
+Phase 4.7 Re-assign LUT pins | Checksum: 1d9a07c9f
+
+Time (s): cpu = 00:02:44 ; elapsed = 00:01:52 . Memory (MB): peak = 1374.871 ; gain = 4.695
+Phase 4 Detail Placement | Checksum: 1d9a07c9f
+
+Time (s): cpu = 00:02:44 ; elapsed = 00:01:53 . Memory (MB): peak = 1374.871 ; gain = 4.695
+
+Phase 5 Post Placement Optimization and Clean-Up
+
+Phase 5.1 PCOPT Shape updates
+Phase 5.1 PCOPT Shape updates | Checksum: 1dc2d98e3
+
+Time (s): cpu = 00:02:45 ; elapsed = 00:01:53 . Memory (MB): peak = 1374.871 ; gain = 4.695
+
+Phase 5.2 Post Commit Optimization
+
+Phase 5.2.1 updateClock Trees: PCOPT
+Phase 5.2.1 updateClock Trees: PCOPT | Checksum: 1dc2d98e3
+
+Time (s): cpu = 00:02:45 ; elapsed = 00:01:53 . Memory (MB): peak = 1374.871 ; gain = 4.695
+
+Phase 5.2.2 Post Placement Optimization
+
+Phase 5.2.2.1 Post Placement Timing Optimization
+
+Phase 5.2.2.1.1 Restore Best Placement
+Phase 5.2.2.1.1 Restore Best Placement | Checksum: 236f1ead8
+
+Time (s): cpu = 00:03:03 ; elapsed = 00:02:05 . Memory (MB): peak = 1388.293 ; gain = 18.117
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.550. For the most accurate timing information please run report_timing.
+Phase 5.2.2.1 Post Placement Timing Optimization | Checksum: 236f1ead8
+
+Time (s): cpu = 00:03:03 ; elapsed = 00:02:05 . Memory (MB): peak = 1388.293 ; gain = 18.117
+Phase 5.2.2 Post Placement Optimization | Checksum: 236f1ead8
+
+Time (s): cpu = 00:03:03 ; elapsed = 00:02:06 . Memory (MB): peak = 1388.293 ; gain = 18.117
+Phase 5.2 Post Commit Optimization | Checksum: 236f1ead8
+
+Time (s): cpu = 00:03:03 ; elapsed = 00:02:06 . Memory (MB): peak = 1388.293 ; gain = 18.117
+
+Phase 5.3 Sweep Clock Roots: Post-Placement
+Phase 5.3 Sweep Clock Roots: Post-Placement | Checksum: 236f1ead8
+
+Time (s): cpu = 00:03:03 ; elapsed = 00:02:06 . Memory (MB): peak = 1388.293 ; gain = 18.117
+
+Phase 5.4 Post Placement Cleanup
+Phase 5.4 Post Placement Cleanup | Checksum: 236f1ead8
+
+Time (s): cpu = 00:03:04 ; elapsed = 00:02:06 . Memory (MB): peak = 1388.293 ; gain = 18.117
+
+Phase 5.5 Placer Reporting
+
+Phase 5.5.1 Restore STA
+Phase 5.5.1 Restore STA | Checksum: 236f1ead8
+
+Time (s): cpu = 00:03:04 ; elapsed = 00:02:06 . Memory (MB): peak = 1388.293 ; gain = 18.117
+Phase 5.5 Placer Reporting | Checksum: 236f1ead8
+
+Time (s): cpu = 00:03:04 ; elapsed = 00:02:07 . Memory (MB): peak = 1388.293 ; gain = 18.117
+
+Phase 5.6 Final Placement Cleanup
+Phase 5.6 Final Placement Cleanup | Checksum: 20172da81
+
+Time (s): cpu = 00:03:04 ; elapsed = 00:02:07 . Memory (MB): peak = 1388.293 ; gain = 18.117
+Phase 5 Post Placement Optimization and Clean-Up | Checksum: 20172da81
+
+Time (s): cpu = 00:03:05 ; elapsed = 00:02:07 . Memory (MB): peak = 1388.293 ; gain = 18.117
+Ending Placer Task | Checksum: 136196ecb
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:02:07 . Memory (MB): peak = 1388.293 ; gain = 18.117
+INFO: [Common 17-83] Releasing license: Implementation
+54 Infos, 38 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:03:11 ; elapsed = 00:02:12 . Memory (MB): peak = 1388.293 ; gain = 18.117
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 1388.293 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 1388.293 ; gain = 0.000
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.070 . Memory (MB): peak = 1388.293 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.975 . Memory (MB): peak = 1388.293 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.140 . Memory (MB): peak = 1388.293 ; gain = 0.000
+Command: phys_opt_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-1223] The version limit for your license is '2015.02' and will expire in -118 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [Vivado_Tcl 4-137] Directive used for phys_opt_design is: Explore
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.500 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+60 Infos, 38 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:18 . Memory (MB): peak = 1388.293 ; gain = 0.000
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 1401.375 ; gain = 13.082
+write_checkpoint: Time (s): cpu = 00:00:16 ; elapsed = 00:00:09 . Memory (MB): peak = 1401.375 ; gain = 13.082
+Command: route_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-1223] The version limit for your license is '2015.02' and will expire in -118 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command route_design
+INFO: [Drc 23-27] Running DRC with 2 threads
+WARNING: [Drc 23-20] Rule violation (PLIO-7) Placement Constraints Check for IO constraints - An IO Bus fixed_io_mio[53:0] with more than one IO standard is found. Components associated with this bus are:  fixed_io_mio[53] of IOStandard LVCMOS18; fixed_io_mio[52] of IOStandard LVCMOS18; fixed_io_mio[51] of IOStandard LVCMOS18; fixed_io_mio[50] of IOStandard LVCMOS18; fixed_io_mio[49] of IOStandard LVCMOS18; fixed_io_mio[48] of IOStandard LVCMOS18; fixed_io_mio[47] of IOStandard LVCMOS18; fixed_io_mio[46] of IOStandard LVCMOS18; fixed_io_mio[45] of IOStandard LVCMOS18; fixed_io_mio[44] of IOStandard LVCMOS18; fixed_io_mio[43] of IOStandard LVCMOS18; fixed_io_mio[42] of IOStandard LVCMOS18; fixed_io_mio[41] of IOStandard LVCMOS18; fixed_io_mio[40] of IOStandard LVCMOS18; fixed_io_mio[39] of IOStandard LVCMOS18; fixed_io_mio[38] of IOStandard LVCMOS18; fixed_io_mio[37] of IOStandard LVCMOS18; fixed_io_mio[36] of IOStandard LVCMOS18; fixed_io_mio[35] of IOStandard LVCMOS18; fixed_io_mio[34] of IOStandard LVCMOS18; fixed_io_mio[33] of IOStandard LVCMOS18; fixed_io_mio[32] of IOStandard LVCMOS18; fixed_io_mio[31] of IOStandard LVCMOS18; fixed_io_mio[30] of IOStandard LVCMOS18; fixed_io_mio[29] of IOStandard LVCMOS18; fixed_io_mio[28] of IOStandard LVCMOS18; fixed_io_mio[27] of IOStandard LVCMOS18; fixed_io_mio[26] of IOStandard LVCMOS18; fixed_io_mio[25] of IOStandard LVCMOS18; fixed_io_mio[24] of IOStandard LVCMOS18; fixed_io_mio[23] of IOStandard LVCMOS18; fixed_io_mio[22] of IOStandard LVCMOS18; fixed_io_mio[21] of IOStandard LVCMOS18; fixed_io_mio[20] of IOStandard LVCMOS18; fixed_io_mio[19] of IOStandard LVCMOS18; fixed_io_mio[18] of IOStandard LVCMOS18; fixed_io_mio[17] of IOStandard LVCMOS18; fixed_io_mio[16] of IOStandard LVCMOS18; fixed_io_mio[15] of IOStandard LVCMOS33; fixed_io_mio[14] of IOStandard LVCMOS33; fixed_io_mio[13] of IOStandard LVCMOS33; fixed_io_mio[12] of IOStandard LVCMOS33; fixed_io_mio[11] of IOStandard LVCMOS33; fixed_io_mio[10] of IOStandard LVCMOS33; fixed_io_mio[9] of IOStandard LVCMOS33; fixed_io_mio[8] of IOStandard LVCMOS33; fixed_io_mio[7] of IOStandard LVCMOS33; fixed_io_mio[6] of IOStandard LVCMOS33; fixed_io_mio[5] of IOStandard LVCMOS33; fixed_io_mio[4] of IOStandard LVCMOS33; fixed_io_mio[3] of IOStandard LVCMOS33; fixed_io_mio[2] of IOStandard LVCMOS33; fixed_io_mio[1] of IOStandard LVCMOS33; fixed_io_mio[0] of IOStandard LVCMOS33;
+WARNING: [Drc 23-20] Rule violation (PLIO-7) Placement Constraints Check for IO constraints - An IO Bus gpio_bd[31:0] with more than one IO standard is found. Components associated with this bus are:  gpio_bd[31] of IOStandard LVCMOS18; gpio_bd[30] of IOStandard LVCMOS18; gpio_bd[29] of IOStandard LVCMOS18; gpio_bd[28] of IOStandard LVCMOS18; gpio_bd[27] of IOStandard LVCMOS18; gpio_bd[26] of IOStandard LVCMOS33; gpio_bd[25] of IOStandard LVCMOS33; gpio_bd[24] of IOStandard LVCMOS33; gpio_bd[23] of IOStandard LVCMOS33; gpio_bd[22] of IOStandard LVCMOS33; gpio_bd[21] of IOStandard LVCMOS33; gpio_bd[20] of IOStandard LVCMOS33; gpio_bd[19] of IOStandard LVCMOS33; gpio_bd[18] of IOStandard LVCMOS18; gpio_bd[17] of IOStandard LVCMOS18; gpio_bd[16] of IOStandard LVCMOS18; gpio_bd[15] of IOStandard LVCMOS18; gpio_bd[14] of IOStandard LVCMOS18; gpio_bd[13] of IOStandard LVCMOS18; gpio_bd[12] of IOStandard LVCMOS18; gpio_bd[11] of IOStandard LVCMOS18; gpio_bd[10] of IOStandard LVCMOS33; gpio_bd[9] of IOStandard LVCMOS33; gpio_bd[8] of IOStandard LVCMOS33; gpio_bd[7] of IOStandard LVCMOS33; gpio_bd[6] of IOStandard LVCMOS33; gpio_bd[5] of IOStandard LVCMOS33; gpio_bd[4] of IOStandard LVCMOS18; gpio_bd[3] of IOStandard LVCMOS18; gpio_bd[2] of IOStandard LVCMOS18; gpio_bd[1] of IOStandard LVCMOS18; gpio_bd[0] of IOStandard LVCMOS18;
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 2 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-270] Using Router directive 'Explore'.
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 11cb54f8f
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:28 . Memory (MB): peak = 1545.727 ; gain = 49.324
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 11cb54f8f
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:29 . Memory (MB): peak = 1545.727 ; gain = 49.324
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 11cb54f8f
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:29 . Memory (MB): peak = 1545.727 ; gain = 49.324
+ Number of Nodes with overlaps = 0
+
+Phase 2.3 Update Timing
+Phase 2.3 Update Timing | Checksum: 12c645fa7
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:45 . Memory (MB): peak = 1597.922 ; gain = 101.520
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.593  | TNS=0      | WHS=-0.356 | THS=-517   |
+
+Phase 2 Router Initialization | Checksum: 148f2d61c
+
+Time (s): cpu = 00:01:18 ; elapsed = 00:00:51 . Memory (MB): peak = 1643.602 ; gain = 147.199
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 1a44ced81
+
+Time (s): cpu = 00:01:26 ; elapsed = 00:00:56 . Memory (MB): peak = 1643.602 ; gain = 147.199
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 5635
+ Number of Nodes with overlaps = 931
+ Number of Nodes with overlaps = 291
+ Number of Nodes with overlaps = 69
+ Number of Nodes with overlaps = 31
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 10
+ Number of Nodes with overlaps = 12
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 2
+INFO: [Route 35-325] The following overlapped nodes exist in the design and there is low overall congestion. 
+Resolution: Check for routing resource conflicts on the identified nets or significant localized congestion using the Route Congestion Metrics in the Device View. 
+1. INT_R_X71Y38/IMUX10
+Overlapping nets: 2
+	i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dsub_64ns_64ns_64_5_full_dsp_U85/toThreshold_ap_dsub_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/EXP/NUMB_CMP/FAST_CMP.CMP_EQ_TOP/WIDE_AND/O1
+	i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dsub_64ns_64ns_64_5_full_dsp_U85/toThreshold_ap_dsub_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/A_IP_DELAY/i_pipe/a_frac_del[9]
+2. INT_L_X40Y11/IMUX_L19
+Overlapping nets: 2
+	i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dadd_64ns_64ns_64_5_full_dsp_U84/toThreshold_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/NORM/LZE/ZERO_DET_CC_1/CARRYS_OUT[7]
+	i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dadd_64ns_64ns_64_5_full_dsp_U84/toThreshold_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_ADD.DSP48E1_ADD/n_5_opt_has_pipe.first_q[1]_i_2__0
+
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+
+Phase 4.1.1 Update Timing
+Phase 4.1.1 Update Timing | Checksum: f4e07a94
+
+Time (s): cpu = 00:02:09 ; elapsed = 00:01:21 . Memory (MB): peak = 1643.602 ; gain = 147.199
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.215  | TNS=0      | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: fdcdc9f8
+
+Time (s): cpu = 00:02:09 ; elapsed = 00:01:21 . Memory (MB): peak = 1643.602 ; gain = 147.199
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 137
+ Number of Nodes with overlaps = 117
+ Number of Nodes with overlaps = 86
+ Number of Nodes with overlaps = 44
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+
+Phase 4.2.1 Update Timing
+Phase 4.2.1 Update Timing | Checksum: c025ad36
+
+Time (s): cpu = 00:02:20 ; elapsed = 00:01:29 . Memory (MB): peak = 1643.602 ; gain = 147.199
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.215  | TNS=0      | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: dffc8269
+
+Time (s): cpu = 00:02:21 ; elapsed = 00:01:29 . Memory (MB): peak = 1643.602 ; gain = 147.199
+Phase 4 Rip-up And Reroute | Checksum: dffc8269
+
+Time (s): cpu = 00:02:21 ; elapsed = 00:01:29 . Memory (MB): peak = 1643.602 ; gain = 147.199
+
+Phase 5 Delay CleanUp
+
+Phase 5.1 Update Timing
+Phase 5.1 Update Timing | Checksum: c4354583
+
+Time (s): cpu = 00:02:25 ; elapsed = 00:01:32 . Memory (MB): peak = 1643.602 ; gain = 147.199
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.215  | TNS=0      | WHS=N/A    | THS=N/A    |
+
+Phase 5 Delay CleanUp | Checksum: c4354583
+
+Time (s): cpu = 00:02:25 ; elapsed = 00:01:32 . Memory (MB): peak = 1643.602 ; gain = 147.199
+
+Phase 6 Clock Skew Optimization
+Phase 6 Clock Skew Optimization | Checksum: c4354583
+
+Time (s): cpu = 00:02:25 ; elapsed = 00:01:32 . Memory (MB): peak = 1643.602 ; gain = 147.199
+
+Phase 7 Post Hold Fix
+
+Phase 7.1 Update Timing
+Phase 7.1 Update Timing | Checksum: 7a621602
+
+Time (s): cpu = 00:02:32 ; elapsed = 00:01:36 . Memory (MB): peak = 1643.602 ; gain = 147.199
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.215  | TNS=0      | WHS=0.033  | THS=0      |
+
+Phase 7 Post Hold Fix | Checksum: ccd2b4c9
+
+Time (s): cpu = 00:02:32 ; elapsed = 00:01:36 . Memory (MB): peak = 1643.602 ; gain = 147.199
+
+Phase 8 Timing Verification
+
+Phase 8.1 Update Timing
+Phase 8.1 Update Timing | Checksum: 6898c70c
+
+Time (s): cpu = 00:02:42 ; elapsed = 00:01:41 . Memory (MB): peak = 1643.602 ; gain = 147.199
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.215  | TNS=0      | WHS=N/A    | THS=N/A    |
+
+Phase 8 Timing Verification | Checksum: 6898c70c
+
+Time (s): cpu = 00:02:42 ; elapsed = 00:01:41 . Memory (MB): peak = 1643.602 ; gain = 147.199
+
+Phase 9 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 9.82246 %
+  Global Horizontal Routing Utilization  = 12.8528 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 9 Route finalize | Checksum: 6898c70c
+
+Time (s): cpu = 00:02:42 ; elapsed = 00:01:41 . Memory (MB): peak = 1643.602 ; gain = 147.199
+
+Phase 10 Verifying routed nets
+
+ Verification completed successfully
+Phase 10 Verifying routed nets | Checksum: 6898c70c
+
+Time (s): cpu = 00:02:42 ; elapsed = 00:01:41 . Memory (MB): peak = 1643.602 ; gain = 147.199
+
+Phase 11 Depositing Routes
+Phase 11 Depositing Routes | Checksum: e75129ce
+
+Time (s): cpu = 00:02:46 ; elapsed = 00:01:45 . Memory (MB): peak = 1643.602 ; gain = 147.199
+
+Phase 12 Post Router Timing
+INFO: [Route 35-20] Post Routing Timing Summary | WNS=0.216  | TNS=0.000  | WHS=0.034  | THS=0.000  |
+
+INFO: [Route 35-61] The design met the timing requirement.
+Phase 12 Post Router Timing | Checksum: e75129ce
+
+Time (s): cpu = 00:03:10 ; elapsed = 00:01:58 . Memory (MB): peak = 1643.602 ; gain = 147.199
+INFO: [Route 35-16] Router Completed Successfully
+
+Routing Is Done.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:01:58 . Memory (MB): peak = 1643.602 ; gain = 147.199
+INFO: [Common 17-83] Releasing license: Implementation
+78 Infos, 40 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:03:15 ; elapsed = 00:02:02 . Memory (MB): peak = 1643.602 ; gain = 242.227
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:01:44 ; elapsed = 00:01:38 . Memory (MB): peak = 1643.602 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:01:45 ; elapsed = 00:01:39 . Memory (MB): peak = 1643.602 ; gain = 0.000
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.runs/impl_1/system_top_drc_routed.rpt.
+report_drc: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 1643.602 ; gain = 0.000
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_timing_summary: Time (s): cpu = 00:00:31 ; elapsed = 00:00:18 . Memory (MB): peak = 1643.602 ; gain = 0.000
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+report_power: Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 1643.602 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 26 20:18:22 2015...
+
+*** Running vivado
+    with args -log system_top.vdi -applog -m64 -messageDb vivado.pb -mode batch -source system_top.tcl -notrace
+
+
+****** Vivado v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source system_top.tcl -notrace
+Command: open_checkpoint system_top_routed.dcp
+INFO: [Netlist 29-17] Analyzing 2963 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2014.4
+Loading clock regions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z020/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z020/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z020/clg484/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.4/data\./parts/xilinx/zynq/IOStandards.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-1079] Register i_system_wrapper/system_i/axi_hp0_interconnect/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and i_system_wrapper/system_i/axi_hp0_interconnect/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register i_system_wrapper/system_i/axi_hp0_interconnect/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and i_system_wrapper/system_i/axi_hp0_interconnect/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register i_system_wrapper/system_i/axi_interconnect_img_process/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and i_system_wrapper/system_i/axi_interconnect_img_process/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register i_system_wrapper/system_i/axi_interconnect_img_process/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and i_system_wrapper/system_i/axi_interconnect_img_process/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register i_system_wrapper/system_i/axi_interconnect_img_process/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and i_system_wrapper/system_i/axi_interconnect_img_process/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register i_system_wrapper/system_i/axi_interconnect_img_process/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and i_system_wrapper/system_i/axi_interconnect_img_process/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register i_system_wrapper/system_i/axi_interconnect_img_process/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and i_system_wrapper/system_i/axi_interconnect_img_process/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register i_system_wrapper/system_i/axi_interconnect_img_process/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and i_system_wrapper/system_i/axi_interconnect_img_process/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+Parsing XDC File [C:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.runs/impl_1/.Xil/Vivado-7220-ESIT044/dcp/system_top_early.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [C:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.srcs/sources_1/bd/system/ip/system_sys_audio_clkgen_0/system_sys_audio_clkgen_0.xdc:56]
+INFO: [Timing 38-2] Deriving generated clocks [C:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.srcs/sources_1/bd/system/ip/system_sys_audio_clkgen_0/system_sys_audio_clkgen_0.xdc:56]
+get_clocks: Time (s): cpu = 00:00:16 ; elapsed = 00:00:15 . Memory (MB): peak = 1181.883 ; gain = 537.168
+Finished Parsing XDC File [C:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.runs/impl_1/.Xil/Vivado-7220-ESIT044/dcp/system_top_early.xdc]
+Parsing XDC File [C:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.runs/impl_1/.Xil/Vivado-7220-ESIT044/dcp/system_top.xdc]
+Finished Parsing XDC File [C:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.runs/impl_1/.Xil/Vivado-7220-ESIT044/dcp/system_top.xdc]
+Parsing XDC File [C:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.runs/impl_1/.Xil/Vivado-7220-ESIT044/dcp/system_top_late.xdc]
+Finished Parsing XDC File [C:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.runs/impl_1/.Xil/Vivado-7220-ESIT044/dcp/system_top_late.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1199.457 ; gain = 16.668
+Restored from archive | CPU: 22.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1199.457 ; gain = 16.668
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 62 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 38 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 22 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 2 instances
+
+INFO: [Project 1-484] Checkpoint was created with build 1071353
+open_checkpoint: Time (s): cpu = 00:00:58 ; elapsed = 00:00:57 . Memory (MB): peak = 1199.457 ; gain = 1020.160
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-1223] The version limit for your license is '2015.02' and will expire in -118 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command write_bitstream
+INFO: [Drc 23-27] Running DRC with 2 threads
+WARNING: [Drc 23-20] Rule violation (CFGBVS-1) Missing CFGBVS and CONFIG_VOLTAGE Design Properties - Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+WARNING: [Drc 23-20] Rule violation (DPIP-1) Input pipelining - DSP i_system_wrapper/system_i/toGray_1/inst/toGray_U/toGray_CvtColor_U0/r_V_1_fu_227_p2 input A C is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [Drc 23-20] Rule violation (DPIP-1) Input pipelining - DSP i_system_wrapper/system_i/toGray_1/inst/toGray_U/toGray_CvtColor_U0/r_V_4_i_reg_332_reg input A B is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [Drc 23-20] Rule violation (DPIP-1) Input pipelining - DSP i_system_wrapper/system_i/toGray_1/inst/toGray_U/toGray_CvtColor_U0/tmp_i_cast_reg_337_reg input A is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [Drc 23-20] Rule violation (DPIP-1) Input pipelining - DSP i_system_wrapper/system_i/toGray_1/inst/toGray_U/toGray_Equalize_U0/toGray_fmul_32ns_32ns_32_4_max_dsp_U20/toGray_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP input A B is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [Drc 23-20] Rule violation (DPIP-1) Input pipelining - DSP i_system_wrapper/system_i/toGray_1/inst/toGray_U/toGray_Equalize_U0/toGray_fmul_32ns_32ns_32_4_max_dsp_U20/toGray_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/DSP input B is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [Drc 23-20] Rule violation (DPIP-1) Input pipelining - DSP i_system_wrapper/system_i/toGray_1/inst/toGray_U/toGray_Equalize_U0/toGray_fmul_32ns_32ns_32_4_max_dsp_U20/toGray_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/DSP input A C is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [Drc 23-20] Rule violation (DPIP-1) Input pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_CvtColor_U0/r_V_1_fu_227_p2 input A C is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [Drc 23-20] Rule violation (DPIP-1) Input pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_CvtColor_U0/r_V_4_i_reg_332_reg input A B is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [Drc 23-20] Rule violation (DPIP-1) Input pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_CvtColor_U0/tmp_i_cast_reg_337_reg input A is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [Drc 23-20] Rule violation (DPIP-1) Input pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_GaussianBlur_U0/grp_toThreshold_Filter2D_fu_37/p_Val2_11_2_2_reg_3304_reg input B is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [Drc 23-20] Rule violation (DPIP-1) Input pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_GaussianBlur_U0/grp_toThreshold_Filter2D_fu_37/p_Val2_11_3_1_fu_1942_p2 input A is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [Drc 23-20] Rule violation (DPIP-1) Input pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_GaussianBlur_U0/grp_toThreshold_Filter2D_fu_37/p_Val2_11_3_2_fu_1952_p2 input A is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [Drc 23-20] Rule violation (DPIP-1) Input pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_GaussianBlur_U0/grp_toThreshold_Filter2D_fu_37/p_Val2_14_1_2_cast_reg_3294_reg input A is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [Drc 23-20] Rule violation (DPIP-1) Input pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_GaussianBlur_U0/grp_toThreshold_Filter2D_fu_37/tmp20_cast_reg_3324_reg input A is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [Drc 23-20] Rule violation (DPIP-1) Input pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_GaussianBlur_U0/grp_toThreshold_Filter2D_fu_37/tmp22_reg_3239_reg input B C is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [Drc 23-20] Rule violation (DPIP-1) Input pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_GaussianBlur_U0/grp_toThreshold_Filter2D_fu_37/tmp3_reg_3274_reg input B C is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [Drc 23-20] Rule violation (DPIP-1) Input pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_GaussianBlur_U0/grp_toThreshold_Filter2D_fu_37/tmp4_reg_3314_reg input B C is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [Drc 23-20] Rule violation (DPIP-1) Input pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_GaussianBlur_U0/grp_toThreshold_Filter2D_fu_37/tmp5_cast_reg_3319_reg input B C is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [Drc 23-20] Rule violation (DPIP-1) Input pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dadd_64ns_64ns_64_5_full_dsp_U84/toThreshold_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_ADD.DSP48E1_ADD/DSP input A B C is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [Drc 23-20] Rule violation (DPIP-1) Input pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dadd_64ns_64ns_64_5_full_dsp_U84/toThreshold_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_GEN.DSP48E1_DEL/DSP input A B is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [Drc 23-20] Rule violation (DPIP-1) Input pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dadd_64ns_64ns_64_5_full_dsp_U84/toThreshold_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP input B C is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [Drc 23-20] Rule violation (DPIP-1) Input pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dmul_64ns_64ns_64_6_max_dsp_U86/toThreshold_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP0/DSP input A B is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [Drc 23-20] Rule violation (DPIP-1) Input pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dmul_64ns_64ns_64_6_max_dsp_U86/toThreshold_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP1/DSP input A is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [Drc 23-20] Rule violation (DPIP-1) Input pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dmul_64ns_64ns_64_6_max_dsp_U86/toThreshold_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP2/DSP input A B is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [Drc 23-20] Rule violation (DPIP-1) Input pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dmul_64ns_64ns_64_6_max_dsp_U86/toThreshold_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP input B C is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [Drc 23-20] Rule violation (DPIP-1) Input pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dsub_64ns_64ns_64_5_full_dsp_U83/toThreshold_ap_dsub_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_ADD.DSP48E1_ADD/DSP input A B C is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [Drc 23-20] Rule violation (DPIP-1) Input pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dsub_64ns_64ns_64_5_full_dsp_U83/toThreshold_ap_dsub_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_GEN.DSP48E1_DEL/DSP input A B is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [Drc 23-20] Rule violation (DPIP-1) Input pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dsub_64ns_64ns_64_5_full_dsp_U83/toThreshold_ap_dsub_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP input B C is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [Drc 23-20] Rule violation (DPIP-1) Input pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dsub_64ns_64ns_64_5_full_dsp_U85/toThreshold_ap_dsub_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_ADD.DSP48E1_ADD/DSP input A B C is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [Drc 23-20] Rule violation (DPIP-1) Input pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dsub_64ns_64ns_64_5_full_dsp_U85/toThreshold_ap_dsub_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_GEN.DSP48E1_DEL/DSP input A B is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [Drc 23-20] Rule violation (DPIP-1) Input pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dsub_64ns_64ns_64_5_full_dsp_U85/toThreshold_ap_dsub_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP input B C is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [Drc 23-20] Rule violation (DPOP-1) Output pipelining - DSP i_system_wrapper/system_i/toGray_1/inst/toGray_U/toGray_CvtColor_U0/r_V_1_fu_227_p2 output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+WARNING: [Drc 23-20] Rule violation (DPOP-1) Output pipelining - DSP i_system_wrapper/system_i/toGray_1/inst/toGray_U/toGray_CvtColor_U0/r_V_4_i_reg_332_reg output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+WARNING: [Drc 23-20] Rule violation (DPOP-1) Output pipelining - DSP i_system_wrapper/system_i/toGray_1/inst/toGray_U/toGray_CvtColor_U0/tmp_i_cast_reg_337_reg output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+WARNING: [Drc 23-20] Rule violation (DPOP-1) Output pipelining - DSP i_system_wrapper/system_i/toGray_1/inst/toGray_U/toGray_Equalize_U0/toGray_fmul_32ns_32ns_32_4_max_dsp_U20/toGray_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+WARNING: [Drc 23-20] Rule violation (DPOP-1) Output pipelining - DSP i_system_wrapper/system_i/toGray_1/inst/toGray_U/toGray_Equalize_U0/toGray_fmul_32ns_32ns_32_4_max_dsp_U20/toGray_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/DSP output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+WARNING: [Drc 23-20] Rule violation (DPOP-1) Output pipelining - DSP i_system_wrapper/system_i/toGray_1/inst/toGray_U/toGray_Equalize_U0/toGray_fmul_32ns_32ns_32_4_max_dsp_U20/toGray_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/DSP output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+WARNING: [Drc 23-20] Rule violation (DPOP-1) Output pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_CvtColor_U0/r_V_1_fu_227_p2 output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+WARNING: [Drc 23-20] Rule violation (DPOP-1) Output pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_CvtColor_U0/r_V_4_i_reg_332_reg output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+WARNING: [Drc 23-20] Rule violation (DPOP-1) Output pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_CvtColor_U0/tmp_i_cast_reg_337_reg output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+WARNING: [Drc 23-20] Rule violation (DPOP-1) Output pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_GaussianBlur_U0/grp_toThreshold_Filter2D_fu_37/p_Val2_11_2_2_reg_3304_reg output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+WARNING: [Drc 23-20] Rule violation (DPOP-1) Output pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_GaussianBlur_U0/grp_toThreshold_Filter2D_fu_37/p_Val2_11_3_1_fu_1942_p2 output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+WARNING: [Drc 23-20] Rule violation (DPOP-1) Output pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_GaussianBlur_U0/grp_toThreshold_Filter2D_fu_37/p_Val2_11_3_2_fu_1952_p2 output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+WARNING: [Drc 23-20] Rule violation (DPOP-1) Output pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_GaussianBlur_U0/grp_toThreshold_Filter2D_fu_37/p_Val2_14_1_2_cast_reg_3294_reg output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+WARNING: [Drc 23-20] Rule violation (DPOP-1) Output pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_GaussianBlur_U0/grp_toThreshold_Filter2D_fu_37/tmp20_cast_reg_3324_reg output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+WARNING: [Drc 23-20] Rule violation (DPOP-1) Output pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_GaussianBlur_U0/grp_toThreshold_Filter2D_fu_37/tmp22_reg_3239_reg output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+WARNING: [Drc 23-20] Rule violation (DPOP-1) Output pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_GaussianBlur_U0/grp_toThreshold_Filter2D_fu_37/tmp3_reg_3274_reg output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+WARNING: [Drc 23-20] Rule violation (DPOP-1) Output pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_GaussianBlur_U0/grp_toThreshold_Filter2D_fu_37/tmp4_reg_3314_reg output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+WARNING: [Drc 23-20] Rule violation (DPOP-1) Output pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_GaussianBlur_U0/grp_toThreshold_Filter2D_fu_37/tmp5_cast_reg_3319_reg output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+WARNING: [Drc 23-20] Rule violation (DPOP-1) Output pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dadd_64ns_64ns_64_5_full_dsp_U84/toThreshold_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_ADD.DSP48E1_ADD/DSP output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+WARNING: [Drc 23-20] Rule violation (DPOP-1) Output pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dadd_64ns_64ns_64_5_full_dsp_U84/toThreshold_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_GEN.DSP48E1_DEL/DSP output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+WARNING: [Drc 23-20] Rule violation (DPOP-1) Output pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dadd_64ns_64ns_64_5_full_dsp_U84/toThreshold_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+WARNING: [Drc 23-20] Rule violation (DPOP-1) Output pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dmul_64ns_64ns_64_6_max_dsp_U86/toThreshold_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP0/DSP output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+WARNING: [Drc 23-20] Rule violation (DPOP-1) Output pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dmul_64ns_64ns_64_6_max_dsp_U86/toThreshold_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP1/DSP output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+WARNING: [Drc 23-20] Rule violation (DPOP-1) Output pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dmul_64ns_64ns_64_6_max_dsp_U86/toThreshold_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP2/DSP output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+WARNING: [Drc 23-20] Rule violation (DPOP-1) Output pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dmul_64ns_64ns_64_6_max_dsp_U86/toThreshold_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP3/DSP output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+WARNING: [Drc 23-20] Rule violation (DPOP-1) Output pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dmul_64ns_64ns_64_6_max_dsp_U86/toThreshold_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP4/DSP output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+WARNING: [Drc 23-20] Rule violation (DPOP-1) Output pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dmul_64ns_64ns_64_6_max_dsp_U86/toThreshold_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP5/DSP output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+WARNING: [Drc 23-20] Rule violation (DPOP-1) Output pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dmul_64ns_64ns_64_6_max_dsp_U86/toThreshold_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP6/DSP output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+WARNING: [Drc 23-20] Rule violation (DPOP-1) Output pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dmul_64ns_64ns_64_6_max_dsp_U86/toThreshold_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP7/DSP output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+WARNING: [Drc 23-20] Rule violation (DPOP-1) Output pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dmul_64ns_64ns_64_6_max_dsp_U86/toThreshold_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP8/DSP output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+WARNING: [Drc 23-20] Rule violation (DPOP-1) Output pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dmul_64ns_64ns_64_6_max_dsp_U86/toThreshold_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/FULL_MAX_USAGE.DSP9/DSP output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+WARNING: [Drc 23-20] Rule violation (DPOP-1) Output pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dmul_64ns_64ns_64_6_max_dsp_U86/toThreshold_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+WARNING: [Drc 23-20] Rule violation (DPOP-1) Output pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dsub_64ns_64ns_64_5_full_dsp_U83/toThreshold_ap_dsub_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_ADD.DSP48E1_ADD/DSP output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+WARNING: [Drc 23-20] Rule violation (DPOP-1) Output pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dsub_64ns_64ns_64_5_full_dsp_U83/toThreshold_ap_dsub_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_GEN.DSP48E1_DEL/DSP output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+WARNING: [Drc 23-20] Rule violation (DPOP-1) Output pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dsub_64ns_64ns_64_5_full_dsp_U83/toThreshold_ap_dsub_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+WARNING: [Drc 23-20] Rule violation (DPOP-1) Output pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dsub_64ns_64ns_64_5_full_dsp_U85/toThreshold_ap_dsub_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_ADD.DSP48E1_ADD/DSP output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+WARNING: [Drc 23-20] Rule violation (DPOP-1) Output pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dsub_64ns_64ns_64_5_full_dsp_U85/toThreshold_ap_dsub_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_GEN.DSP48E1_DEL/DSP output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+WARNING: [Drc 23-20] Rule violation (DPOP-1) Output pipelining - DSP i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dsub_64ns_64ns_64_5_full_dsp_U85/toThreshold_ap_dsub_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+WARNING: [Drc 23-20] Rule violation (IOCS-1) IOB clock sharing - IOs hdmi_data_e, spdif placed at U16, U15 connects to flops which are clocked by i_system_wrapper/system_i/axi_hdmi_clkgen/inst/i_mmcm_drp/clk_0, i_system_wrapper/system_i/sys_audio_clkgen/inst/clk_out1.  Pushing these flops into IOB may cause PAR to fail because the clock route is shared between adjacent (differential pair) IOs.  If there are only two clocks packing them in different BELs might fix the problem, like INST IOB1_flop = BEL FF1 and INST IOB2_flop = BEL FF2.
+INFO: [Drc 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/i_csc_RGB2CrYCb/i_csc_1_Cb/i_mul_c1/i_mult_macro/dsp_v5_1.DSP48_V5_1: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [Drc 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/i_csc_RGB2CrYCb/i_csc_1_Cb/i_mul_c2/i_mult_macro/dsp_v5_1.DSP48_V5_1: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [Drc 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/i_csc_RGB2CrYCb/i_csc_1_Cb/i_mul_c3/i_mult_macro/dsp_v5_1.DSP48_V5_1: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [Drc 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/i_csc_RGB2CrYCb/i_csc_1_Cr/i_mul_c1/i_mult_macro/dsp_v5_1.DSP48_V5_1: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [Drc 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/i_csc_RGB2CrYCb/i_csc_1_Cr/i_mul_c2/i_mult_macro/dsp_v5_1.DSP48_V5_1: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [Drc 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/i_csc_RGB2CrYCb/i_csc_1_Cr/i_mul_c3/i_mult_macro/dsp_v5_1.DSP48_V5_1: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [Drc 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/i_csc_RGB2CrYCb/i_csc_1_Y/i_mul_c1/i_mult_macro/dsp_v5_1.DSP48_V5_1: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [Drc 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/i_csc_RGB2CrYCb/i_csc_1_Y/i_mul_c2/i_mult_macro/dsp_v5_1.DSP48_V5_1: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [Drc 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/i_csc_RGB2CrYCb/i_csc_1_Y/i_mul_c3/i_mult_macro/dsp_v5_1.DSP48_V5_1: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [Drc 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/toGray_1/inst/toGray_U/toGray_Equalize_U0/toGray_fmul_32ns_32ns_32_4_max_dsp_U20/toGray_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [Drc 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/toGray_1/inst/toGray_U/toGray_Equalize_U0/toGray_fmul_32ns_32ns_32_4_max_dsp_U20/toGray_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [Drc 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/toGray_1/inst/toGray_U/toGray_Equalize_U0/toGray_fmul_32ns_32ns_32_4_max_dsp_U20/toGray_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [Drc 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dadd_64ns_64ns_64_5_full_dsp_U84/toThreshold_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_ADD.DSP48E1_ADD/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [Drc 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dadd_64ns_64ns_64_5_full_dsp_U84/toThreshold_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_GEN.DSP48E1_DEL/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [Drc 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dadd_64ns_64ns_64_5_full_dsp_U84/toThreshold_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [Drc 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dmul_64ns_64ns_64_6_max_dsp_U86/toThreshold_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP0/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [Drc 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dmul_64ns_64ns_64_6_max_dsp_U86/toThreshold_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP1/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [Drc 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dmul_64ns_64ns_64_6_max_dsp_U86/toThreshold_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP2/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [Drc 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dmul_64ns_64ns_64_6_max_dsp_U86/toThreshold_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP3/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [Drc 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dmul_64ns_64ns_64_6_max_dsp_U86/toThreshold_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP4/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [Drc 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dmul_64ns_64ns_64_6_max_dsp_U86/toThreshold_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP5/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [Drc 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dmul_64ns_64ns_64_6_max_dsp_U86/toThreshold_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP6/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [Drc 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dmul_64ns_64ns_64_6_max_dsp_U86/toThreshold_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP7/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [Drc 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dmul_64ns_64ns_64_6_max_dsp_U86/toThreshold_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP8/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [Drc 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dmul_64ns_64ns_64_6_max_dsp_U86/toThreshold_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/FULL_MAX_USAGE.DSP9/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [Drc 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dmul_64ns_64ns_64_6_max_dsp_U86/toThreshold_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [Drc 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dsub_64ns_64ns_64_5_full_dsp_U83/toThreshold_ap_dsub_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_ADD.DSP48E1_ADD/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [Drc 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dsub_64ns_64ns_64_5_full_dsp_U83/toThreshold_ap_dsub_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_GEN.DSP48E1_DEL/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [Drc 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/toThreshold_0/inst/toThreshold_U/toThreshold_Loop_GradientLoop_proc_U0/toThreshold_dsub_64ns_64ns_64_5_full_dsp_U83/toThreshold_ap_dsub_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [Common 17-14] Message 'Drc 23-20' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 71 Warnings, 43 Advisories
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./system_top.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-83] Releasing license: Implementation
+write_bitstream: Time (s): cpu = 00:00:57 ; elapsed = 00:01:01 . Memory (MB): peak = 1610.418 ; gain = 410.961
+WARNING: [Vivado_Tcl 4-319] File system_top.mmi does not exist
+bdTcl: C:/Xilinx/Projects/attention_detect/hdl-hdl_2015_r1/projects/adv7511/zed_working/adv7511_zed.runs/impl_1/.Xil/Vivado-7220-ESIT044/HWH/system_bd.tcl
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 26 20:20:35 2015...
